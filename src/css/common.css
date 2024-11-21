@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Impact';
+  src: url('./fonts/impact.ttf');
+  font-style: normal;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  background-color: #0e1823;
+  color: #fbfbfb;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*------ common ----*/
+
+.wrapper {
+  max-width: 360px;
+  min-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 320px;
+  min-width: 280px;
+  margin: 0 auto;
+}
+
+.hiden-css {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+  .container {
+    max-width: 704px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    max-width: 1280px;
+    padding: 0 32px;
+  }
+  .container {
+    max-width: 1216px;
+  }
+}
