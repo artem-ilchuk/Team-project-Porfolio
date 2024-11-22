@@ -1,0 +1,135 @@
+.container {
+    min-width: 320px;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.review-title {
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.23077;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #292929;
+    text-align: center;
+    margin-bottom: 40px;    
+}
+
+.review-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;   
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.review-thumb {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.review-avatar {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.review-author {
+    font-weight: 600;    
+    margin: 0;
+}
+
+.swiper-wrapper {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-slide {
+    background-color: #e4e5e6;    
+    border-radius: 16px;
+    padding: 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
+
+.btn-thumb {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    gap: 16px;
+}
+
+.swiper-button-next {
+    position: static;
+    margin-top: 24px;    
+    width: 40px;
+    height: 40px;    
+  }  
+  
+  .swiper-button-prev {
+    position: static;
+    margin-top: 24px;
+    width: 40px;
+    height: 40px;    
+  }
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+
+    .review-title {
+        font-size: 108px;
+        line-height: 1.14815;
+        letter-spacing: 0.02em;
+        margin-bottom: 60px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .container {        
+        max-width: 1280px;
+        width: 1216px;        
+    }
+
+    .review-title {            
+        margin-bottom: 80px;
+    }
+
+    .btn-thumb {            
+        gap: 24px;
+    }
+
+    .swiper-button-next {            
+        width: 48px;
+        height: 48px;            
+    }
+    
+    .swiper-button-prev {            
+        width: 48px;
+        height: 48px;            
+    }
+}
+
+.not-found {
+    width: 100%;    
+    background-color: #e4e5e6;
+    border-radius: 16px;
+    padding: 32px;
+    box-sizing: border-box;
+    text-align: center;        
+}
+
+.not-found-text {
+    font-size: 18px;     
+}
