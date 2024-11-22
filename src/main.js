@@ -1,3 +1,4 @@
+import './js/test-button.js';
 import './js/faq.js';
 import './js/mob_menu.js';
 import './js/my_projects.js';
