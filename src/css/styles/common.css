@@ -1,14 +1,37 @@
 @font-face {
   font-family: 'Impact';
-  src: url('./fonts/impact.ttf');
+  src: url('./fonts/impact.ttf') format('truetype');
   font-style: normal;
 }
 
+:root {
+  --black: #292929;
+  --accet-green: #00b068;
+  --white: #f0f0f0;
+  --light-grey: #e4e5e6;
+  --light-accet: #bcdfd1;
+  --hover-green: #009156;
+  --error: #e74a3b;
+  --hover-grey: #bbbbbb;
+}
+
+.dark {
+  --black: #f0f0f0;
+  --accet-green: #14c57c;
+  --white: #1e2023;
+  --light-grey: #2a2d32;
+  --light-accet: #204136;
+  --hover-green: #009156;
+  --error: #e74a3b;
+  --hover-grey: #3b3f45;
+}
+
 body {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  background-color: #0e1823;
-  color: #fbfbfb;
+  background-color: var(--white);
+  color: var(--black);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 html {

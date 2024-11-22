@@ -28,7 +28,7 @@ a {
 button {
   cursor: pointer;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 img {
@@ -39,4 +39,9 @@ img {
 
 address {
   font-style: normal;
+}
+
+input,
+textarea {
+  outline: none;
 }
