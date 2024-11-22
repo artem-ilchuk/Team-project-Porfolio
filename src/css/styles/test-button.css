@@ -1,11 +1,16 @@
 .theme-test {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 30px;
+  height: 40px;
+  width: 280px;
+  background-color: gold;
+  margin-bottom: 15px;
 }
 .theme-test-text {
   font-weight: normal;
-  font-size: large;
+  font-size: small;
 }
 .switch {
   position: relative;
