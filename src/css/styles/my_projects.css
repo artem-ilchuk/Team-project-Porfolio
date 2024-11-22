@@ -1,0 +1,152 @@
+.hidden {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.title_my_project {
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 123%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--black);
+}
+
+use{
+    stroke-width: 2px;
+    stroke: var(--accet-green);
+}
+
+.green_tmp {
+    color: var(--accet-green);
+}
+
+.nav_my_project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.list_my_project {
+    margin-bottom: 40px;
+}
+
+
+.image_b_my_project {
+    margin-bottom: 12px;
+}
+
+.img_my_project {
+    width: 320px;
+    height: 184px;
+    border-radius: 16px;
+}
+
+
+.card_text_my_project {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+}
+
+.title_card_my_project {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.btn_my_project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    gap: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    padding: 12px 24px;
+    color: var(--black);
+    background-color: var(--light-grey);
+}
+
+.btn_my_project:hover,
+.btn_my_project:focus{
+    background-color: var(--hover-grey);
+}
+
+.box_btn_first_my_project{
+    display: flex;
+    justify-content: center;
+}
+
+.btn_my_project_first{
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    color: var(--black);
+    background-color: transparent;
+}
+
+.btn_my_project_first::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--accet-green);;
+}
+
+.btn_my_project_first:hover,
+.btn_my_project_first:focus{
+    color: var(--accet-green);
+}
+
+@media screen and (min-width: 768px){
+    .title_my_project{
+        font-size: 108px;
+        line-height: 115%;
+        letter-spacing: 0.02em;
+    }
+    .img_my_project{
+        border-radius: 24px;
+        width: 704px;
+        height: 404px;
+    }
+    .title_card_my_project{
+        font-size: 36px;
+        line-height: 133%;
+        letter-spacing: 0.01em;
+    }
+    .btn_my_project_first{
+        font-size: 20px;
+        line-height: 160%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .img_my_project{
+        width: 1008px;
+        height: 580px;
+    }
+}
