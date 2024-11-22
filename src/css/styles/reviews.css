@@ -12,9 +12,9 @@
     line-height: 1.23077;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #292929;
+    color: var(--black);
     text-align: center;
-    margin-bottom: 40px;    
+    margin-bottom: 40px; 
 }
 
 .review-text {
@@ -23,7 +23,7 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    color: #292929;   
+    color: var(--black);
     margin-top: 0;
     margin-bottom: 24px;
 }
@@ -51,7 +51,7 @@
 }
 
 .swiper-slide {
-    background-color: #e4e5e6;    
+    background-color: var(--light-grey);
     border-radius: 16px;
     padding: 32px;
     box-sizing: border-box;
@@ -72,14 +72,16 @@
     position: static;
     margin-top: 24px;    
     width: 40px;
-    height: 40px;    
+    height: 40px; 
+    fill:var(--black);
   }  
   
   .swiper-button-prev {
     position: static;
     margin-top: 24px;
     width: 40px;
-    height: 40px;    
+    height: 40px;  
+    fill: var(--black);
   }
 
 @media only screen and (min-width: 768px) {
@@ -123,7 +125,7 @@
 
 .not-found {
     width: 100%;    
-    background-color: #e4e5e6;
+    background-color: var(--light-grey);
     border-radius: 16px;
     padding: 32px;
     box-sizing: border-box;
