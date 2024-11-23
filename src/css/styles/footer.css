@@ -10,15 +10,19 @@ body{
 .dark {
     --faq-footer-line: #f0f0f0;
 }
-
+.footer-wrapper{
+    border-top: 1px solid var(--faq-footer-line);
+}
 .footer-container {
+    padding: 0;
     max-width: 360px;
     min-width: 320px;
-    border-top: 1px solid var(--faq-footer-line);
 }
 
 .footer {
-    padding: 40px 20px;
+    padding: 0;
+    padding-top: 40px;
+
 }
 
 .footer-logo-container{
@@ -93,9 +97,7 @@ body{
         max-width: 768px;
     }
 
-    .footer {
-        padding: 40px 32px 24px;
-    }
+
 
     .footer-logo-container {
         margin-bottom: 40px;
@@ -129,6 +131,7 @@ body{
 
     .footer-container {
         max-width: 1280px;
+        padding-left: 38px;
     }
 
     .footer-logo-container {
