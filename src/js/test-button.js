@@ -1,4 +1,4 @@
-const selector = document.querySelector('#switch');
+const selector = document.querySelector('#theme-switch');
 const body = document.body;
 const LS_KEY_SWITCH = 'switch';
 
