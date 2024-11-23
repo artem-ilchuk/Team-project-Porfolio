@@ -8,8 +8,30 @@ import 'swiper/css/mousewheel';
 import '../css/styles/reviews.css';
 
 import axios from 'axios';
-loadReviews();
-launchSwiper();
+
+const guard = document.querySelector('.js-load-reviews');
+
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0,
+};
+
+const observer = new IntersectionObserver(handlePagination, options);
+observer.observe(guard);
+function handlePagination(entries, observer) {
+  entries.forEach(async entry => {
+    if (entry.isIntersecting) {
+      observer.unobserve(guard);
+      try {
+        await loadReviews();
+        launchSwiper();
+      } catch (error) {
+        alert(error.message);
+      }
+    }
+  });
+}
 
 async function loadReviews() {
   await axios
@@ -17,7 +39,7 @@ async function loadReviews() {
     .then(response => {
       createGallery(response.data);
     })
-    .catch(error => {
+    .catch(() => {
       iziToastMes('Reviews not found');
       const gallery = document.querySelector('.swiper-wrapper');
       gallery.insertAdjacentHTML(
