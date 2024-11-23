@@ -2,15 +2,19 @@ body{
     transition: all 1000ms ease;
 }
 
+:root {
+    --faq-footer-line:#e4e5e6; 
+}
+
+
 .dark {
---light-grey: #f0f0f0;
+    --faq-footer-line: #f0f0f0;
 }
 
 .footer-container {
     max-width: 360px;
     min-width: 320px;
-    border-top: 1px solid var(--light-grey);
-
+    border-top: 1px solid var(--faq-footer-line);
 }
 
 .footer {
