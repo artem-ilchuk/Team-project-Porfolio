@@ -11,7 +11,9 @@
        
 }
 
-
+.bg-image {
+    display: none;
+}
 .together-container {
     position: relative;
 }
@@ -188,6 +190,10 @@
         position: absolute;
         top: -116px;
         right: 0;
+        }
+
+        .bg-image {
+            display: block;
         }
 
     .together-title {
