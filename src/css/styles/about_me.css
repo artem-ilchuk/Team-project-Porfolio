@@ -121,7 +121,7 @@
     background-image: url(/img/about-me/bg-tab.png);
     background-size: auto;
     background-repeat: no-repeat;
-    background-position: right 20px bottom 170px;
+    background-position: right 1px bottom 155px;
   }
 
   .container-education-role {
@@ -145,7 +145,7 @@
 
   .about-me-container {
     background-image: url(/img/about-me/bg-desk.png);
-    background-position: right 10px bottom 230px;
+    background-position: right 10px bottom 250px;
   }
 
   .about-me-section {
