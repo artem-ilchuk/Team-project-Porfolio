@@ -1,11 +1,11 @@
 
 .work-together {
+    position: relative; 
+    z-index: 1;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 80px;
     margin-bottom: 80px;
-        background-repeat: no-repeat;
-        background-position: top right;
-        background-size: 336px 260px;
+    overflow: visible; 
        
 }
 
@@ -106,6 +106,7 @@
     position: absolute;
     right: 17px;
     top: 17px;
+    stroke: var(--white);
     fill: var(--accet-green);
     
   }
@@ -172,11 +173,15 @@
 @media screen and (min-width:768px) {
 
     .work-together {
-        margin-top: 62px; 
+        position: relative; 
+        z-index: 1;
+        margin-top: 124px; 
         margin-bottom: 124px; 
+        background-repeat: no-repeat;
         background-image: url(/img/work-together/bg-tab.png); 
         background-position: calc(100% - 32px) calc(0% - 120px);; 
         background-size: 336px 260px;
+        overflow: visible; 
       }
 
     .together-title {
@@ -228,12 +233,11 @@
 @media screen and (min-width:1280px) {
 
     .work-together {
-        margin-top: 82px;
+        z-index: 1;
+        margin-top: 164px;
         margin-bottom: 164px;
             max-width: 100%;
             position: relative;
-            margin-top: 82px;
-            margin-bottom: 164px;
             background-image: url(/img/work-together/bg-desk.png);
             background-repeat: no-repeat;
             background-position: calc(100% - 32px) calc(0% - 116px);
