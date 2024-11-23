@@ -1,15 +1,19 @@
 
 .work-together {
-    width: 100%;
-    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+    margin-top: 80px;
     margin-bottom: 80px;
-        background-repeat: no-repeat;
-        background-position: top right;
-        background-size: 336px 260px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: visible;
        
 }
 
-
+.bg-image {
+    display: none;
+}
 .together-container {
     position: relative;
 }
@@ -70,7 +74,7 @@
 
 .together-icon {
     stroke: var(--accet-green);
-    fill: var(--white);
+    fill: transparent;
 }
 
 
@@ -87,7 +91,6 @@
     background: var(--light-grey);
     height: 48px;
     border: none;
-    border: 1px solid #e4e5e6;
     color: var(--black);
         font-family: Poppins;
         font-size: 16px;
@@ -106,6 +109,7 @@
     position: absolute;
     right: 17px;
     top: 17px;
+    stroke: transparent;
     fill: var(--accet-green);
     
   }
@@ -172,12 +176,25 @@
 @media screen and (min-width:768px) {
 
     .work-together {
-        margin-top: 62px; 
+        position: relative; 
+        z-index: 1;
+        margin-top: 124px; 
         margin-bottom: 124px; 
-        background-image: url(/img/work-together/bg-tab.png); 
-        background-position: calc(100% - 32px) calc(0% - 120px);; 
+        background-repeat: no-repeat;
         background-size: 336px 260px;
+        overflow: visible; 
       }
+
+      .together-bg-img {
+        display: block;
+        position: absolute;
+        top: -116px;
+        right: 0;
+        }
+
+        .bg-image {
+            display: block;
+        }
 
     .together-title {
             font-family: Impact;
@@ -228,19 +245,22 @@
 @media screen and (min-width:1280px) {
 
     .work-together {
-        margin-top: 82px;
+        z-index: 1;
+        margin-top: 164px;
         margin-bottom: 164px;
             max-width: 100%;
             position: relative;
-            margin-top: 82px;
-            margin-bottom: 164px;
-            background-image: url(/img/work-together/bg-desk.png);
             background-repeat: no-repeat;
-            background-position: calc(100% - 32px) calc(0% - 116px);
-            background-size: 526px 408px;
+            background-size: auto 526px;
             overflow: visible; 
         }
         
+        .together-bg-img {
+        display: block;
+        position: absolute;
+        top: -116px;
+        right: 0;
+        }
 
         .together-subtittle {
             margin-bottom: 120px;

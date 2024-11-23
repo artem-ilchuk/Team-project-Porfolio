@@ -1,4 +1,6 @@
-
+.faq-section{
+    margin-bottom: 164px;
+}
 
 .faq-container {
     max-width: 360px;
@@ -6,9 +8,7 @@
 }
 
 .faq {
-     /* padding: 40px 20px; */
     position: relative;
-    margin-bottom: 164px;
 }
 
 .faq-title {
@@ -37,7 +37,7 @@
 
 
 .ac {
-    border-top: 1px solid var(--light-grey);
+    border-top: 1px solid var(--faq-footer-line);
     background-color: transparent;
     box-sizing: border-box;
     padding: 28px 24px;
@@ -52,20 +52,12 @@
     position: absolute;
     right: 28px;
     transition: all 250ms;
-    background-color: red;
+    fill: transparent;;
+    stroke: var(--black);
 }
 
-.open-icon {
-    position: absolute;
-    right: 28px;
-    transition: all 250ms;
-    display: none;
-}
-
-
-
-.ac:last-child {
-    border-bottom: 1px solid var(--light-grey);
+ .ac:last-child {
+    border-bottom: 1px solid var(--faq-footer-line);
 }
 
 .ac .ac-header {
@@ -154,6 +146,7 @@
  /* Зміна іконок */
 .ac.is-active>.close-icon {
     transform: rotateX(180deg);
+
 }
 
 
