@@ -1,4 +1,6 @@
-
+.faq-section{
+    margin-bottom: 164px;
+}
 
 .faq-container {
     max-width: 360px;
@@ -6,9 +8,7 @@
 }
 
 .faq {
-     /* padding: 40px 20px; */
     position: relative;
-    margin-bottom: 164px;
 }
 
 .faq-title {
@@ -53,10 +53,10 @@
     right: 28px;
     transition: all 250ms;
     fill: transparent;;
-    stroke: var(--black);;
+    stroke: var(--black);
 }
 
-.ac:last-child {
+ .ac:last-child {
     border-bottom: 1px solid var(--faq-footer-line);
 }
 
