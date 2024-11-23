@@ -17,9 +17,9 @@ async function loadReviews() {
     .then(response => {
       createGallery(response.data);
     })
-    .catch(error => {      
+    .catch(error => {
       iziToastMes('Reviews not found');
-      const gallery = document.querySelector('.swiper-wrapper'); 
+      const gallery = document.querySelector('.swiper-wrapper');
       gallery.insertAdjacentHTML(
         'beforeend',
         '<li class="not-found"><p class="not-found-text">Not Found</p></li>'
@@ -28,7 +28,7 @@ async function loadReviews() {
 }
 
 function createGallery(data) {
-  const gallery = document.querySelector('.swiper-wrapper');  
+  const gallery = document.querySelector('.swiper-wrapper');
   let markup = data
     .map(
       slide => `
@@ -46,13 +46,13 @@ function createGallery(data) {
   gallery.insertAdjacentHTML('beforeend', markup);
 }
 
-function launchSwiper() {  
+function launchSwiper() {
   const swiper = new Swiper('.swiper', {
-    modules: [Navigation, Pagination, Keyboard, Mousewheel],    
+    modules: [Navigation, Pagination, Keyboard, Mousewheel],
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    },    
+    },
     keyboard: {
       enabled: true,
       onlyInViewport: false,

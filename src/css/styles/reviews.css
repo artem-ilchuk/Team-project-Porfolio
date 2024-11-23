@@ -44,6 +44,10 @@
     margin: 0;
 }
 
+.swiper {
+    margin-bottom: 48px;
+}
+
 .swiper-wrapper {
     box-sizing: border-box;
     margin: 0;
@@ -65,24 +69,46 @@
     position: relative;
     display: flex;
     justify-content: right;
-    gap: 16px;
+    gap: 16px;    
+}
+
+.btn-arrow {
+    box-sizing: content-box;
+    stroke: var(--black);
+    fill: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    min-width: 24px;
+    min-height: 24px;
+    padding: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .swiper-button-next {
-    position: static;
-    margin-top: 24px;    
-    width: 40px;
-    height: 40px; 
-    fill:var(--black);
+    position: static;   
+    width: 24px;
+    height: 24px;
   }  
   
   .swiper-button-prev {
-    position: static;
-    margin-top: 24px;
-    width: 40px;
-    height: 40px;  
-    fill: var(--black);
+    position: static;   
+    width: 24px;
+    height: 24px;
   }
+
+  .btn-arrow:hover {
+    background-color: var(--hover-grey);
+    fill: var(--hover-grey);
+  }
+
+  .swiper-button-prev.swiper-button-disabled,
+  .swiper-button-next.swiper-button-disabled {
+    opacity: 1;
+    stroke: var(--light-grey);
+    border: 1px solid var(--light-grey);
+  }
+  
 
 @media only screen and (min-width: 768px) {
     .container {
@@ -110,16 +136,10 @@
 
     .btn-thumb {            
         gap: 24px;
-    }
+    }    
 
-    .swiper-button-next {            
-        width: 48px;
-        height: 48px;            
-    }
-    
-    .swiper-button-prev {            
-        width: 48px;
-        height: 48px;            
+    .btn-arrow {            
+        padding: 12px;
     }
 }
 
@@ -135,3 +155,8 @@
 .not-found-text {
     font-size: 18px;     
 }
+
+
+
+
+
