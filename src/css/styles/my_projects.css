@@ -23,7 +23,7 @@
     color: var(--black);
 }
 
-use{
+.icon_my_project{
     stroke-width: 2px;
     stroke: var(--accet-green);
 }
