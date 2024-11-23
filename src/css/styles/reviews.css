@@ -73,14 +73,17 @@
 }
 
 .btn-arrow {
-    box-sizing: content-box;
-    stroke: var(--black);
-    fill: var(--white);
+    box-sizing: content-box;    
     border: 1px solid var(--black);
     border-radius: 8px;
     min-width: 24px;
     min-height: 24px;
     padding: 8px;    
+}
+
+.btn-arrow-color {
+    stroke: var(--black);
+    fill: var(--white);
 }
 
 .swiper-button-next {
@@ -96,16 +99,14 @@
   }
 
   .btn-arrow:hover {
-    background-color: var(--hover-grey);
-    fill: var(--hover-grey);
+    background-color: var(--hover-grey);    
   }
 
-  /* .swiper-button-prev.swiper-button-disabled,
-  .swiper-button-next.swiper-button-disabled {
-    opacity: 1;
-    stroke: var(--light-grey);
-    border: 1px solid var(--light-grey);
-  } */
+  .btn-arrow:hover .btn-arrow-color {
+    stroke: var(--black);
+    fill: var(--hover-grey);
+  }
+  
   
 
 @media only screen and (min-width: 768px) {
