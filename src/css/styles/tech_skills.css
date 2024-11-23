@@ -11,8 +11,8 @@
   background-color: var(--light-accet);
   display: flex;
   align-items: center;
-  width: 120%;
-  margin-left: -10%;
+  width: 150%;
+  margin-left: -27%;
 }
 
 .marquee-2 {
@@ -28,10 +28,10 @@
 }
 @keyframes marquee {
   from {
-    transform: translateX(100%);
+    transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-40%);
   }
 }
 
@@ -81,6 +81,7 @@
 
 .marquee__inner-2 {
   animation-delay: 150ms;
+  animation-direction: reverse;
 }
 
 @media screen and (min-width: 768px) {
