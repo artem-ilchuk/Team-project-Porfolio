@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (remainingProjects <= projectsPerClick) {
       setTimeout(() => {
         loadMoreButton.style.display = "none";
-      }, 100); 
+      }, 100);
     }
   });
 });
