@@ -1,161 +1,154 @@
 .container {
-    min-width: 320px;
-    max-width: 360px;
-    margin: 0 auto;
-    padding: 0 20px;
+  min-width: 320px;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .review-title {
-    font-family: "Impact", sans-serif;
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 1.23077;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--black);
-    text-align: center;
-    margin-bottom: 40px; 
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23077;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .review-text {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    color: #292929;
-    margin-top: 0;
-    margin-bottom: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--black);
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
 .review-thumb {
-    display: flex;
-    gap: 16px;
-    align-items: center;
+  display: flex;
+  gap: 16px;
+  align-items: center;
 }
 
 .review-avatar {
-    width: 40px;
-    border-radius: 50%;
+  width: 40px;
+  border-radius: 50%;
 }
 
 .review-author {
-    font-weight: 600;    
-    margin: 0;
+  font-weight: 600;
+  margin: 0;
 }
 
 .swiper {
-    margin-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .swiper-wrapper {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .swiper-slide {
-    background-color: var(--light-grey);
-    border-radius: 16px;
-    padding: 32px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: auto;
+  background-color: var(--light-grey);
+  border-radius: 16px;
+  padding: 32px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
 }
 
 .btn-thumb {
-    position: relative;
-    display: flex;
-    justify-content: right;
-    gap: 16px;    
+  position: relative;
+  display: flex;
+  justify-content: right;
+  gap: 16px;
 }
 
 .btn-arrow {
-    box-sizing: content-box;    
-    border: 1px solid var(--black);
-    border-radius: 8px;
-    min-width: 24px;
-    min-height: 24px;
-    padding: 8px;    
+  box-sizing: content-box;
+  border: 1px solid var(--black);
+  border-radius: 8px;
+  min-width: 24px;
+  min-height: 24px;
+  padding: 8px;
 }
 
 .btn-arrow-color {
-    stroke: var(--black);
-    fill: var(--white);
+  stroke: var(--black);
+  fill: var(--white);
 }
 
 .swiper-button-next {
-    position: static;   
-    width: 24px;
-    height: 24px;
-  }  
-  
-  .swiper-button-prev {
-    position: static;   
-    width: 24px;
-    height: 24px;
-  }
+  position: static;
+  width: 24px;
+  height: 24px;
+}
 
-  .btn-arrow:hover {
-    background-color: var(--hover-grey);    
-  }
+.swiper-button-prev {
+  position: static;
+  width: 24px;
+  height: 24px;
+}
 
-  .btn-arrow:hover .btn-arrow-color {
-    stroke: var(--black);
-    fill: var(--hover-grey);
-  }
-  
-  
+.btn-arrow:hover {
+  background-color: var(--hover-grey);
+}
+
+.btn-arrow:hover .btn-arrow-color {
+  stroke: var(--black);
+  fill: var(--hover-grey);
+}
 
 @media only screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        padding: 0 32px;
-    }
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
 
-    .review-title {
-        font-size: 108px;
-        line-height: 1.14815;
-        letter-spacing: 0.02em;
-        margin-bottom: 60px;
-    }
+  .review-title {
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 0.02em;
+    margin-bottom: 60px;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
-    .container {        
-        max-width: 1280px;
-        width: 1216px;        
-    }
+  .container {
+    max-width: 1280px;
+    width: 1216px;
+  }
 
-    .review-title {            
-        margin-bottom: 80px;
-    }
+  .review-title {
+    margin-bottom: 80px;
+  }
 
-    .btn-thumb {            
-        gap: 24px;
-    }    
+  .btn-thumb {
+    gap: 24px;
+  }
 
-    .btn-arrow {            
-        padding: 12px;
-    }
+  .btn-arrow {
+    padding: 12px;
+  }
 }
 
 .not-found {
-    width: 100%;    
-    background-color: var(--light-grey);
-    border-radius: 16px;
-    padding: 32px;
-    box-sizing: border-box;
-    text-align: center;        
+  width: 100%;
+  background-color: var(--light-grey);
+  border-radius: 16px;
+  padding: 32px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .not-found-text {
-    font-size: 18px;     
+  font-size: 18px;
 }
-
-
-
-
-
