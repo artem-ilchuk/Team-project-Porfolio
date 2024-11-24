@@ -62,13 +62,19 @@
   top: 11px;
   right: -5px;
   z-index: -1;
-  /* трохи змінив розміщення, 
-    щоб було максимально сжоже 
+  /* трохи змінив розміщення,
+    щоб було максимально сжоже
     на макет */
 }
 
 .social-list {
   display: none;
+}
+.hero-tx-con {
+  padding: 36px 20px;
+  margin: 0 auto;
+  max-width: 360px;
+  background-color: var(--light-grey);
 }
 
 .hero-text {
@@ -78,16 +84,18 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
-  padding: 32px 20px;
+  /* padding: 32px 20px; */
   color: var(--black);
   /*-----------------додав------*/
-  background-color: var(--light-grey);
+
   /*-----------------додав------*/
 }
 
 @media screen and (min-width: 768px) {
   .hero-container {
     position: relative;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .hero-title {
@@ -119,6 +127,10 @@
     position: absolute;
   }
 
+  .hero-tx-con {
+    padding: 64px 32px;
+    max-width: 768px;
+  }
   .hero-text {
     font-weight: 500;
     font-size: 36px;
@@ -126,7 +138,6 @@
     letter-spacing: 0.01em;
     text-transform: uppercase;
     text-align: center;
-    padding: 64px 0px;
   }
 
   .hero-bg {
@@ -134,8 +145,8 @@
     top: 0;
     right: -5px;
     z-index: -1;
-    /* трохи змінив розміщення, 
-        щоб було більш-менш сжоже 
+    /* трохи змінив розміщення,
+        щоб було більш-менш сжоже
         на макет */
   }
 }
@@ -198,7 +209,10 @@
     color: var(--hover-green);
   }
 
-  .hero-text {
-    padding: 120px 104px;
+  .hero-tx-con {
+    padding: 120px 136px;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: var(--light-grey);
   }
 }
