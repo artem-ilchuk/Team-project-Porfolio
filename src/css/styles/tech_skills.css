@@ -3,6 +3,10 @@
   margin-bottom: 80px;
 }
 
+.tech-skils {
+  max-width: 360px;
+  margin: 0 auto;
+}
 .marquee-1,
 .marquee-2 {
   overflow: hidden;
@@ -12,12 +16,14 @@
   display: flex;
   align-items: center;
   width: 100%;
+  z-index: 1;
   /* margin-left: -27%; */
 }
 
 .marquee-2 {
   transform: rotate(+2deg);
   background-color: var(--light-grey);
+  z-index: 0;
 }
 
 .marquee__inner-1,
@@ -85,6 +91,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .tech-skils {
+    max-width: 768px;
+  }
   .skills-animation {
     height: 280px;
     margin-bottom: 124px;
@@ -104,6 +113,9 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .tech-skils {
+    max-width: 1280px;
+  }
   .skills-animation {
     height: 280px;
     margin-bottom: 164px;
