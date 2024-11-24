@@ -72,8 +72,8 @@ function launchSwiper() {
   const swiper = new Swiper('.swiper', {
     modules: [Navigation, Pagination, Keyboard, Mousewheel],
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.reviews-button-next',
+      prevEl: '.reviews-button-prev',      
     },
     keyboard: {
       enabled: true,
