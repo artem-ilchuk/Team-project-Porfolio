@@ -1,291 +1,276 @@
-
 .work-together {
-    position: relative;
-    z-index: 1;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    overflow: visible;
-       
+  position: relative;
+  z-index: 1;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: visible;
 }
 
 .bg-image {
-    display: none;
+  display: none;
 }
 .together-container {
-    position: relative;
+  position: relative;
 }
 
-.together-title {color: var(--accet-green);
-    font-family: Impact;
-    font-size: 52px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.23em;
-    letter-spacing: 1.8px;
-    text-transform: uppercase;
-    margin-bottom: 40px;
+.together-title {
+  color: var(--accet-green);
+  font-family: Impact;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.23em;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
 }
 
 .together-title-span {
-    color: var(--black);
+  color: var(--black);
 }
 
 .together-subtittle {
-    color: var(--black);
-        font-family: Poppins;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 1.56em;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
-        margin-bottom: 32px;
+  color: var(--black);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.56em;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
 }
 
 .together-list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
 }
 
 .together-link {
-    display: flex;
-    gap: 16px;
-    transition: color 250ms;
+  display: flex;
+  gap: 16px;
+  transition: color 250ms;
 }
-.together-link:hover, .together-link:focus {
-    color: var(--hover-green);
+.together-link:hover,
+.together-link:focus {
+  color: var(--hover-green);
 }
 .together-item {
-    display: flex;
-    gap: 16px;
-    color: var(--black);
-        font-family: Poppins;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 1.5em;
-        letter-spacing: 0.5px;
-        
+  display: flex;
+  gap: 16px;
+  color: var(--black);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
 }
 
 .together-icon {
-    stroke: var(--accet-green);
-    fill: transparent;
+  stroke: var(--accet-green);
+  fill: transparent;
 }
 
-
 .form-label {
-    display: none;
-    opacity: 0;
-    visibility: hidden;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .form-input-name {
-    width: 100%;
-    padding: 16px;
-    border-radius: 8px;
-    background: var(--light-grey);
-    height: 48px;
-    border: none;
-    color: var(--black);
-        font-family: Poppins;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 1.5em;
-        letter-spacing: 0.5px;
-      gap: 32px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  background: var(--light-grey);
+  height: 48px;
+  border: none;
+  color: var(--black);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  gap: 32px;
 }
 
 .input-container {
-    position: relative;
-  }
+  position: relative;
+}
 
-  .email-correct-icon {
-    position: absolute;
-    right: 17px;
-    top: 17px;
-    stroke: transparent;
-    fill: var(--accet-green);
-    
-  }
-  .d-none {
-    display: none;
-  }
+.email-correct-icon {
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  stroke: transparent;
+  fill: var(--accet-green);
+}
+.d-none {
+  display: none;
+}
 
 .input-textarea {
-    width: 100%;
-    padding: 16px;
-    border-radius: 8px;
-    background: var(--light-grey);
-    height: 128px;
-    border: none;
-    color: var(--black);
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 1.5em;
-    letter-spacing: 0.5px;
-    margin-bottom: 32px;
-    resize: none;
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  background: var(--light-grey);
+  height: 128px;
+  border: none;
+  color: var(--black);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  margin-bottom: 32px;
+  resize: none;
 }
 
 .form-btn {
-    border-radius: 8px;
-    background-color: var(--accet-green);
-    color: #f0f0f0;
-        font-family: Poppins;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.5em;
-        letter-spacing: 0.5px;
-        border: none;
-        width: 100%;
-        height: 48px;
-        transition: background-color 250ms;
+  border-radius: 8px;
+  background-color: var(--accet-green);
+  color: #f0f0f0;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  border: none;
+  width: 100%;
+  height: 48px;
+  transition: background-color 250ms;
 }
-.form-btn:hover, .form-btn:focus {
-    background-color: var(--hover-green);
+.form-btn:hover,
+.form-btn:focus {
+  background-color: var(--hover-green);
 }
 .together-invalid-email {
-    opacity: 1;
-    visibility: visible;
-    display: block;
-    color: var(--error);
-        font-family: Poppins;
-        font-size: 12px;
-        font-weight: 300;
-        line-height: 1.33em;
-        letter-spacing: 0.5px;
-        margin-bottom: 20px;
+  opacity: 1;
+  visibility: visible;
+  display: block;
+  color: var(--error);
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.33em;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
 }
 
 .d-none {
-    opacity: 0;
-    visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
 }
 
 /* ---TABLET--- */
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
+  .work-together {
+    position: relative;
+    z-index: 1;
+    margin-top: 124px;
+    margin-bottom: 124px;
+    background-repeat: no-repeat;
+    background-size: 336px 260px;
+    overflow: visible;
+  }
 
-    .work-together {
-        position: relative; 
-        z-index: 1;
-        margin-top: 124px; 
-        margin-bottom: 124px; 
-        background-repeat: no-repeat;
-        background-size: 336px 260px;
-        overflow: visible; 
-      }
+  .together-bg-img {
+    display: block;
+    position: absolute;
+    top: -116px;
+    right: 0;
+  }
 
-      .together-bg-img {
-        display: block;
-        position: absolute;
-        top: -116px;
-        right: 0;
-        }
+  .bg-image {
+    display: block;
+  }
 
-        .bg-image {
-            display: block;
-        }
+  .together-title {
+    font-family: Impact;
+    font-size: 108px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.15em;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
 
-    .together-title {
-            font-family: Impact;
-            font-size: 108px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 1.15em;
-            letter-spacing: 1.8px;
-            text-transform: uppercase;
-            margin-bottom: 60px;
-    }
+  .together-subtittle {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6em;
+    letter-spacing: 0.5px;
+    width: 488px;
+  }
 
-    .together-subtittle {
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 1.6em;
-            letter-spacing: 0.5px;
-            width: 488px;
-    }
+  .together-list {
+    flex-direction: row;
+    margin-bottom: 60px;
+    justify-content: flex-start;
+  }
 
-    .together-list {
-        flex-direction: row;
-        margin-bottom: 60px;
-        justify-content: flex-start;
-    }
+  .together-item {
+    color: var(--black);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5em;
+    letter-spacing: 0.5px;
+  }
 
-    .together-item {
-        color: var(--black);
-            font-family: Poppins;
-            font-size: 16px;
-            font-weight: 300;
-            line-height: 1.5em;
-            letter-spacing: 0.5px;
-    }
-
-    .form-btn {
-        padding: 12px 24px;
-        width: 173px;
-    }
-    
-    
-
-    
+  .form-btn {
+    padding: 12px 24px;
+    width: 173px;
+  }
 }
 
 /* ---DESKTOP--- */
-@media screen and (min-width:1280px) {
+@media screen and (min-width: 1280px) {
+  .work-together {
+    z-index: 1;
+    margin-top: 164px;
+    margin-bottom: 164px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: auto 526px;
+    overflow: visible;
+  }
 
-    .work-together {
-        z-index: 1;
-        margin-top: 164px;
-        margin-bottom: 164px;
-            max-width: 100%;
-            position: relative;
-            background-repeat: no-repeat;
-            background-size: auto 526px;
-            overflow: visible; 
-        }
-        
-        .together-bg-img {
-        display: block;
-        position: absolute;
-        top: -116px;
-        right: 0;
-        }
+  .together-bg-img {
+    display: block;
+    position: absolute;
+    top: -116px;
+    right: 0;
+  }
 
-        .together-subtittle {
-            margin-bottom: 120px;
-        }
+  .together-subtittle {
+    margin-bottom: 120px;
+  }
 
-        .together-list {
-            flex-direction: column;
-            margin-bottom: 0;
-        }
+  .together-list {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
 
-
-        .together-position {
-            display: flex;
-            gap: 136px;
-        }
-        .form-input-name {
-            width: 560px;
-        }
-
-    }
-
-
-
-.form-input-name-error {
-    color: var(--error);
+  .together-position {
+    display: flex;
+    gap: 136px;
+  }
+  .form-input-name {
+    width: 560px;
+  }
 }
 
-
+.form-input-name-error {
+  color: var(--error);
+}
