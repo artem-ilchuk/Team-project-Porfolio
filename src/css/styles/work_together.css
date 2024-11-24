@@ -6,7 +6,9 @@
   background-position: center;
   background-size: cover;
   overflow: visible;
+  
 }
+
 
 .together-container {
   position: relative;
@@ -261,4 +263,12 @@ padding-top: 164px;
 
 .form-input-name-error {
   color: var(--error);
+}
+
+
+@media screen and (min-width: 1920px) {
+    .work-together {
+        background-position-x: 65%;
+        background-size: auto;
+    }
 }
