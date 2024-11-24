@@ -191,6 +191,14 @@
         display: flex;
         justify-content: space-between;
     }
+
+    .faq-decor{
+        width: 526px;
+        height: 500px ;
+        background-image: url(/img/faq/bg-desk.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
     
     .faq-title {
         width: 520px;
