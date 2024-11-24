@@ -7,5 +7,5 @@ import{A as S,i as d,a as h,S as E,N as k,P as M,K as O,M as A}from"./assets/ven
           <img class="review-avatar" src="${s.avatar_url}" alt="Autor: ${s.author}">
           <p class="review-author">${s.author}</p>
         </div>
-      </li>`).join("");t.insertAdjacentHTML("beforeend",r)}function R(){new E(".swiper",{modules:[k,M,O,A],navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},keyboard:{enabled:!0,onlyInViewport:!1,pageUpDown:!0},mousewheel:{enabled:!0},slidesPerView:1,spaceBetween:32,breakpoints:{1280:{slidesPerView:2}}})}function $(e,t="red"){d.show({icon:"icon-person",message:e,color:t,position:"topRight",transitionIn:"bounceInDown",transitionOut:"flipOutX",closeOnClick:!0,displayMode:"replace",timeout:3e3})}
+      </li>`).join("");t.insertAdjacentHTML("beforeend",r)}function R(){new E(".swiper",{modules:[k,M,O,A],navigation:{nextEl:".reviews-button-next",prevEl:".reviews-button-prev"},keyboard:{enabled:!0,onlyInViewport:!1,pageUpDown:!0},mousewheel:{enabled:!0},slidesPerView:1,spaceBetween:32,breakpoints:{1280:{slidesPerView:2}}})}function $(e,t="red"){d.show({icon:"icon-person",message:e,color:t,position:"topRight",transitionIn:"bounceInDown",transitionOut:"flipOutX",closeOnClick:!0,displayMode:"replace",timeout:3e3})}
 //# sourceMappingURL=index.js.map
