@@ -182,9 +182,8 @@ body {
 .hat-logo {
     padding: 20px 0;
     display: block;
-
-    font-family: var(--second-family);
-    font-weight: 400;
+  font-family: Impact;
+  font-weight: 400;
     font-size: 24px;
     line-height: 100%;
     letter-spacing: 0.06em;
@@ -255,7 +254,7 @@ body {
 }
 
 .switcher__content input:checked+label {
-    background-color: var(--black);
+    background-color: #2a2727;
 }
 
 .switcher__content input:checked+label::after {
@@ -263,7 +262,7 @@ body {
 }
 
 .switcher__content input:checked+label::before {
-    background-color: var(--black);
+    background-color: #2a2727;
     opacity: 1;
     z-index: 5;
 
