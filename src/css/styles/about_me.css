@@ -4,6 +4,7 @@
   margin-bottom: 80px;
 }
 .about-me-section {
+  font-family: 'Impact', sans-serif;
   color: var(--black);
   font-size: 52px;
   line-height: 1.23;
