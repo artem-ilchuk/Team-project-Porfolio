@@ -1,10 +1,3 @@
-.container {
-  min-width: 320px;
-  max-width: 360px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .review-title {
   font-family: 'Impact', sans-serif;
   font-weight: 400;
@@ -107,11 +100,7 @@
   fill: var(--hover-grey);
 }
 
-@media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
+@media only screen and (min-width: 768px) {  
 
   .review-title {
     font-size: 108px;
@@ -122,10 +111,6 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    width: 1216px;
-  }
 
   .review-title {
     margin-bottom: 80px;
