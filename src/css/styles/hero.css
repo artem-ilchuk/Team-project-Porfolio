@@ -6,196 +6,199 @@
 } */
 
 .hero {
-    color: var(--white);
-    padding-top: 80px;
-    position: relative;
-    margin-bottom: 80px;
+  color: var(--white);
+  padding-top: 80px;
+  /*-----------------додав------*/
+  position: relative;
+  margin-bottom: 80px;
 
+  /*-----------------додав------*/
 }
 
 .hero-content {
-    padding-top: 64px;
-
+  padding-top: 64px;
 }
 
 .hero-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 72px;
 }
 
-
 .hero-title {
-    width: 320px;
-    font-family: "Impact", sans-serif;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--black);
+  /*-----------------додав------*/
+  width: 320px;
+  /*-----------------додав------*/
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
 }
 
 .text-green {
-    color: var(--accet-green);
+  color: var(--accet-green);
 }
 
 .hero-images {
-    overflow: hidden;
-    width: 100%;
-    max-width: 276px;
-    flex-shrink: 0;
-    height: auto;
-    margin: 0 auto;
-    z-index: 10;
+  overflow: hidden;
+  width: 100%;
+  max-width: 276px;
+  flex-shrink: 0;
+  height: auto;
+  margin: 0 auto;
+  z-index: 10;
 }
 
 .hero-images img {
-    width: 100%;
+  width: 100%;
 }
 
 .hero-bg {
-    position: absolute;
-    top: 11px;
-    right: -5px;
-    z-index: -1;
-   
+  position: absolute;
+  top: 11px;
+  right: -5px;
+  z-index: -1;
+  /* трохи змінив розміщення, 
+    щоб було максимально сжоже 
+    на макет */
 }
-
 
 .social-list {
-    display: none;
+  display: none;
 }
 
-
 .hero-text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 156%;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 32px 20px;
-    color: var(--black);
-    background-color: var(--light-grey);
-
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 32px 20px;
+  color: var(--black);
+  /*-----------------додав------*/
+  background-color: var(--light-grey);
+  /*-----------------додав------*/
 }
 
 @media screen and (min-width: 768px) {
-    .hero-container {
-        position: relative;
-    }
+  .hero-container {
+    position: relative;
+  }
 
-    .hero-title {
-       
-        width: 704px;
-        font-family: "Impact", sans-serif;
-        font-weight: 400;
-        font-size: 136px;
-        line-height: 1.14706;
-        letter-spacing: 0.01em;
-        text-transform: uppercase;
-        color: var(--black);
-    }
+  .hero-title {
+    /*-----------------додав------*/
+    width: 704px;
+    /*-----------------додав------*/
+    font-family: 'Impact', sans-serif;
+    font-weight: 400;
+    font-size: 136px;
+    line-height: 1.14706;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: var(--black);
+  }
 
+  .hero-title {
+    font-size: 124px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+  }
 
+  .hero-images {
+    max-width: 336px;
+    margin: -120px 0 0 auto;
+  }
 
-    .hero-title {
-        font-size: 124px;
-        line-height: 1.16;
-        letter-spacing: 0.01em;
-    }
+  .background-color {
+    display: block;
+    position: absolute;
+  }
 
-    .hero-images {
-        max-width: 336px;
-        margin: -120px 0 0 auto;
+  .hero-text {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.33333;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 64px 0px;
+  }
 
-    }
-
-    .background-color {
-        display: block;
-        position: absolute;
-    }
-
-    .hero-text {
-        font-weight: 500;
-        font-size: 36px;
-        line-height: 1.33333;
-        letter-spacing: 0.01em;
-        text-transform: uppercase;
-        text-align: center;
-        padding: 64px 0px;
-    }
-
-    .hero-bg {
-        position: absolute;
-        top: 0;
-        right: -5px;
-        z-index: -1;
-    
-    }
+  .hero-bg {
+    position: absolute;
+    top: 0;
+    right: -5px;
+    z-index: -1;
+    /* трохи змінив розміщення, 
+        щоб було більш-менш сжоже 
+        на макет */
+  }
 }
 
-
 @media screen and (min-width: 1280px) {
+  .hero-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    .hero-content {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  .container {
+    max-width: 1280px;
+  }
 
-    .container {
-        max-width: 1280px;
-    }
+  .hero-title-list-container {
+    padding-bottom: 40px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-    .hero-title-list-container {
-        padding-bottom: 40px;
-        padding-top: 60px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+  .hero-title {
+    align-self: flex-end;
+    margin-bottom: 80;
+    font-size: 136px;
+    line-height: 1.14706;
+    max-width: 660px;
+    /*-----------------видалити------*/
+    /* padding: 64px 32px; */
+    /*-----------------видалити------*/
+    /*-----------------додав------*/
+    padding: 0;
+    /* margin-bottom: 80px; */
+    /*-----------------додав------*/
+  }
 
+  .social-list {
+    display: flex;
+  }
 
-    .hero-title {
-        align-self: flex-end;
-        margin-bottom: 80;
-        font-size: 136px;
-        line-height: 1.14706;
-        max-width: 660px;
-        padding: 0;
-    
-    }
+  .hero-images {
+    max-width: 488px;
+    width: 100%;
+  }
 
-    .social-list {
+  .social-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+  }
 
-        display: flex;
-    }
+  .social-link {
+    color: var(--black);
+    transition: color ease-in-out 0.2s;
+  }
 
-    .hero-images {
-        max-width: 488px;
-        width: 100%;
-    }
+  .social-link:hover {
+    color: var(--hover-green);
+  }
 
-    .social-list {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 40px;
-    }
-
-    .social-link {
-        color: var(--black);
-        transition: color ease-in-out 0.2s;
-    }
-
-
-    .social-link:hover {
-        color: var(--hover-green);
-    }
-
-    .hero-text {
-        padding: 120px 104px;
-    }
+  .hero-text {
+    padding: 120px 104px;
+  }
 }

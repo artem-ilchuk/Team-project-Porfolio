@@ -1,15 +1,99 @@
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
+/* *,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
-
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #FFFFFF;
+    color: #434455;
 }
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: none
+}
+address {
+    font-style: normal
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+} */
+/* :root {
+    --black: #292929;
+    --accet-green: #00b068;
+    --white: #f0f0f0;
+    --light-grey: #e4e5e6;
+    --light-accet: #bcdfd1;
+    --hover-green: #009156;
+    --error: #e74a3b;
+    --hover-grey: #bbbbbb;
+    --font-main: 'Poppins';
+    --font-second: 'Impact';
+    --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+/* 
+html,
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+body {
+    font-family: var(--font-main), sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: var(--black);
+    background-color: var(--white);
+    min-width: 320px;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+} */
+/*------ common ----*/
+/* .container {
+    max-width: 360px;
+    height: 64px;
+    min-width: 320px;
+    padding: 0 20px;
+    margin: 0 auto;
+} */
+/* .hiden-css {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+} */
 
 .backdrop {
   position: fixed;
@@ -32,7 +116,6 @@
 }
 
 /* ===============Other code=============== */
-
 /* ==================----Header---=================== */
 .hat {
   position: fixed;
@@ -63,7 +146,7 @@
 .hat-logo {
   padding: 20px 0;
   display: block;
-  font-family: Impact;
+  font-family: 'Impact', sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 100%;
@@ -134,7 +217,7 @@
 }
 
 .switcher__content input:checked + label {
-  background-color: #2a2727;
+  background-color: #292929;
 }
 
 .switcher__content input:checked + label::after {
@@ -142,7 +225,7 @@
 }
 
 .switcher__content input:checked + label::before {
-  background-color: #2a2727;
+  background-color: #292929;
   opacity: 1;
   z-index: 5;
 }
@@ -162,7 +245,9 @@
   .hat {
     height: 96px;
   }
+
   .hat-logo {
+    font-size: 32px;
     padding: 32px;
   }
 
