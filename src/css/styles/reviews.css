@@ -38,7 +38,7 @@
 }
 
 .swiper {
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 }
 
 .swiper-wrapper {
@@ -69,8 +69,8 @@
   box-sizing: content-box;
   border: 1px solid var(--black);
   border-radius: 8px;
-  min-width: 24px;
-  min-height: 24px;
+  width: 24px;
+  height: 24px;
   padding: 8px;
 }
 
@@ -79,25 +79,47 @@
   fill: var(--white);
 }
 
-.swiper-button-next {
-  position: static;
-  width: 24px;
-  height: 24px;
+.reviews-button-prev,
+.reviews-button-next {  
+  display: flex;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.swiper-button-prev {
-  position: static;
-  width: 24px;
-  height: 24px;
-}
-
-.btn-arrow:hover {
+.reviews-button-prev:hover,
+.reviews-button-next:hover,
+.reviews-button-prev:focus,
+.reviews-button-next:focus {
   background-color: var(--hover-grey);
 }
 
-.btn-arrow:hover .btn-arrow-color {
+.reviews-button-prev:hover .btn-arrow-color,
+.reviews-button-next:hover .btn-arrow-color,
+.reviews-button-prev:focus .btn-arrow-color,
+.reviews-button-next:focus .btn-arrow-color {
   stroke: var(--black);
   fill: var(--hover-grey);
+}
+.swiper-button-disabled .btn-arrow {
+  border: 1px solid var(--light-grey);
+}
+
+.swiper-button-disabled .btn-arrow-color {
+  stroke: var(--light-grey);
+  fill: var(--light-grey);
+}
+
+.swiper-button-disabled:hover {
+  background-color: var(--white);
+  cursor: auto;
+}
+
+.swiper-button-disabled:hover .btn-arrow-color {
+  stroke: var(--light-grey);
+  fill: var(--light-grey);
 }
 
 @media only screen and (min-width: 768px) {
