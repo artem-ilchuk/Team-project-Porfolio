@@ -13,6 +13,8 @@
   --hover-green: #009156;
   --error: #e74a3b;
   --hover-grey: #bbbbbb;
+  --faq-footer-line: #e4e5e6;
+  --pop-up-message: #f0f0f0;
 }
 
 .dark {
@@ -24,6 +26,8 @@
   --hover-green: #009156;
   --error: #e74a3b;
   --hover-grey: #3b3f45;
+  --faq-footer-line: #f0f0f0;
+  --pop-up-message: #2a2d32;
 }
 
 body {

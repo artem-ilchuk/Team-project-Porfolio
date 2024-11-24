@@ -1,0 +1,227 @@
+.faq-section{
+    margin-bottom: 164px;
+}
+
+.faq-container {
+    max-width: 360px;
+    min-width: 320px;
+}
+
+.faq {
+    position: relative;
+}
+
+.faq-title {
+    font-family: 'Impact';
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 123%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: 40px;
+}
+
+.faq-title-span {
+    color: var(--accet-green);
+}
+
+.faq-decor {
+    width: 526px;
+    height: 408px;
+    display: none;
+}
+
+ /* -----ACCORDION------- */
+
+
+
+.ac {
+    border-top: 1px solid var(--faq-footer-line);
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 28px 24px;
+    transition: all 750ms;
+    position: relative;
+    transition: all 1000ms ease;
+    
+}
+
+ /* іконка */
+.close-icon {
+    position: absolute;
+    right: 28px;
+    transition: all 250ms;
+    fill: transparent;;
+    stroke: var(--black);
+}
+
+ .ac:last-child {
+    border-bottom: 1px solid var(--faq-footer-line);
+}
+
+.ac .ac-header {
+    margin: 0;
+    padding: 0
+}
+
+ /* Заголовок */
+.ac .ac-trigger {
+     /* max-width: 224px; */
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--black);
+    text-align: left;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+    transition: color .25s ease;
+    position: relative;
+    text-decoration: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    padding-right: 72px;
+}
+
+.ac .ac-trigger:focus {
+    color: var(--black);
+}
+
+.ac .ac-panel {
+    overflow: hidden;
+    transition-property: height, visibility;
+    transition-timing-function: ease
+}
+
+ /* Текст  */
+.ac .ac-panel .ac-text {
+    width: 272px;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: var(--black);
+}
+
+.ac.js-enabled .ac-panel {
+    visibility: hidden;
+}
+
+.ac.is-active .ac-panel {
+    visibility: visible;
+}
+
+.ac.is-active {
+     /* зміна кольору фону картки при відкриті */
+    background: var(--light-accet);
+    border-radius: 16px;
+    border: none;
+
+}
+
+.ac.is-active {
+    border: none;
+}
+
+.ac.is-active+.ac {
+    border-top: none;
+}
+
+.ac.is-active .ac-trigger {
+    margin-bottom: 24px;
+}
+
+.ac.is-active>.ac-header .ac-trigger::after {
+    content: "";
+}
+
+
+ /* Зміна іконок */
+.ac.is-active>.close-icon {
+    transform: rotateX(180deg);
+
+}
+
+
+ /* -----ACCORDION------- */
+
+
+
+ /* ------TAB------ */
+@media (min-width: 768px) {
+    .faq-container {
+        max-width: 768px;
+    }
+
+
+    .faq-title {
+        font-weight: 400;
+        font-size: 108px;
+        line-height: 115%;
+        letter-spacing: 0.02em;
+    padding-left: 0;
+    }
+
+    .ac .ac-trigger {
+        font-style: 20px;
+        line-height: 160%;
+    }
+
+    .ac .ac-panel .ac-text {
+        width: fit-content;
+    }
+}
+
+
+
+ /* ------DESC------ */
+@media (min-width: 1280px) {
+    .faq-container {
+        max-width: 1280px;
+    }
+
+    .faq {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .faq-title {
+        width: 520px;
+    }
+
+    .faq-title-decor {
+        display: flex;
+        flex-direction: column;
+        gap: 180px;
+    }
+
+
+    .faq-decor {
+        display: block;
+    }
+
+    .accordion-container {
+        position: relative;
+        top: 276px;
+        max-height: 744px;
+    }
+
+    .close-icon {
+        right: 32px;
+    }
+
+    .open-icon {
+        right: 32px;
+    }
+
+    .ac {
+        width: 592px;
+    }
+}
