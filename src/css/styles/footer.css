@@ -1,126 +1,107 @@
-body{
-    transition: all 1000ms ease;
+body {
+  transition: all 1000ms ease;
 }
 
-:root {
-    --faq-footer-line:#e4e5e6; 
-}
-
-
-.dark {
-    --faq-footer-line: #f0f0f0;
-}
-.footer-wrapper{
-    border-top: 1px solid var(--faq-footer-line);
+.footer-wrapper {
+  border-top: 1px solid var(--faq-footer-line);
 }
 .footer-container {
-    padding: 0;
-    max-width: 360px;
-    min-width: 320px;
+  padding: 0;
+  max-width: 360px;
+  min-width: 320px;
 }
 
 .footer {
-    padding: 0;
-    padding-top: 40px;
-
+  padding: 0;
+  padding-top: 40px;
 }
 
-.footer-logo-container{
-    margin-bottom: 40px;
+.footer-logo-container {
+  margin-bottom: 40px;
 }
 
 .footer-logo {
-    font-family: Impact;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 100%;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--black);
-    margin: 0;
-    margin-bottom: 32px;
-    max-width: 233px;
+  font-family: Impact;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--black);
+  margin: 0;
+  margin-bottom: 32px;
+  max-width: 233px;
 }
 
 .footer-logo-span {
-    color: var(--accet-green);
+  color: var(--accet-green);
 }
 
 .footer-link-list {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-
 .footer-link {
-    font-family: 'Poppins';
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.03em;
-    transition: all 250ms ease;
-    color: var(--black);
-
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  transition: all 250ms ease;
+  color: var(--black);
 }
 
 .footer-link:hover {
-    color: var(--accet-green);
-    ;
+  color: var(--accet-green);
 }
 
 .footer-link:focus {
-    color: var(--accet-green);
+  color: var(--accet-green);
 }
 
 .copyright {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .copyright-txt {
-    font-family: var(--font-family);
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: var(--black);
-    width: 190px;
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--black);
+  width: 190px;
 }
 
 /* -----TAB-------- */
 @media (min-width: 768px) {
+  .footer-container {
+    max-width: 768px;
+  }
 
-    .footer-container {
-        max-width: 768px;
-    }
+  .footer-logo-container {
+    margin-bottom: 40px;
+  }
 
+  .footer-link-list {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+  }
 
+  .copyright {
+    padding: 0;
+    justify-content: end;
+  }
 
-    .footer-logo-container {
-        margin-bottom: 40px;
-    }
-
-    .footer-link-list {
-        display: flex;
-        gap: 40px;
-        flex-direction: row;
-    }
-
-    .copyright {
-        padding: 0;
-        justify-content: end;
-    }
-
-    .copyright-txt {
-        width: 344px;
-        left: 0;
-    }
-
-
-
+  .copyright-txt {
+    width: 344px;
+    left: 0;
+  }
 }
 
 /* -----TAB-------- */
@@ -128,29 +109,28 @@ body{
 /* -----DESK-------- */
 
 @media (min-width: 1280px) {
+  .footer-container {
+    max-width: 1280px;
+    padding-left: 38px;
+  }
 
-    .footer-container {
-        max-width: 1280px;
-        padding-left: 38px;
-    }
+  .footer-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 44px;
+  }
 
-    .footer-logo-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 44px;
-    }
+  .footer-logo {
+    margin: 0;
+  }
 
-    .footer-logo {
-        margin: 0;
-    }
+  .footer-link-list {
+    padding: 0;
+    margin: 0;
+  }
 
-    .footer-link-list {
-        padding: 0;
-        margin: 0;
-    }
-
-    .footer-link {
-        cursor: pointer;
-    }
+  .footer-link {
+    cursor: pointer;
+  }
 }

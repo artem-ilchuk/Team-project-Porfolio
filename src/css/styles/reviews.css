@@ -2,7 +2,6 @@
   min-width: 320px;
   max-width: 360px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .review-title {
@@ -110,7 +109,6 @@
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0 32px;
   }
 
   .review-title {

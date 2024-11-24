@@ -1,88 +1,81 @@
-:root {
-  --pop-up-message: #f0f0f0;
-}
-
-.dark {
-  --pop-up-message: #2a2d32;
-}
-
 .backdrop {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    background-color:rgba(41, 41, 41, 0.8);
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    z-index: 999;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(41, 41, 41, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 999;
 }
 
 .is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .pop-up {
-    width: 320px;
-    height: 328px;
-    padding: 48px 32px;
-    border-radius: 16px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-   background: var(--pop-up-message);
+  width: 320px;
+  height: 328px;
+  padding: 48px 32px;
+  border-radius: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--pop-up-message);
 }
 
 .pop-up-close-btn {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    width: 24px;
-    height: 24px;
-    border: none;
-    background-color: transparent;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
 }
 
 .pop-up-close-icon {
-    stroke: var(--black);
+  stroke: var(--black);
 }
 
 .pop-up-text {
-display: flex;
-flex-direction: column;
-gap: 16px;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
 }
 
 .pop-up-text {
-    color: var(--accet-green);
-        text-align: center;
-        font-family: Poppins;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 1.6em;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
+  color: var(--accet-green);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6em;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .pop-up-subtext {
-    color: var(--black);
-        text-align: center;
-        font-family: Poppins;
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 1.5;
-        letter-spacing: 0.5px;
-        margin-top: 16px;
+  color: var(--black);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  margin-top: 16px;
 }
 
 /* ---TABLET--- */
-
-.pop-up {
+@media only screen and (min-width: 768px) {
+  .pop-up {
     width: 492px;
     height: 280px;
     padding: 64px;
+  }
 }

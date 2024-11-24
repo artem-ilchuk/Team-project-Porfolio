@@ -11,8 +11,8 @@
   background-color: var(--light-accet);
   display: flex;
   align-items: center;
-  width: 150%;
-  margin-left: -27%;
+  width: 100%;
+  /* margin-left: -27%; */
 }
 
 .marquee-2 {
