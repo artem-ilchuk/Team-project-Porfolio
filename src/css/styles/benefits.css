@@ -97,16 +97,20 @@ color: var(--black);
 @media screen and (min-width: 1280px) {
     .benefits {
         margin-bottom: 164px;
+        padding-top: 164px;
+        position: relative;
+        z-index: 1;
+        background-repeat: no-repeat;
+    background-size: 526px 408px;
+        background-image: url(/img/benefits/bg-desk.png);
+        background-repeat: no-repeat;
+        background-position-x: 95%;
+        background-position-y: 50px;
     }
 .benefits-container {
     height: 676px;
 }
-    .benefits-bg {
-        display: block;
-        position: absolute;
-        top: -116px;
-        right: 0;
-    }
+
     .benefits-container{
         position: relative;
     }
