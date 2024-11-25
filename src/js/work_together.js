@@ -13,6 +13,15 @@ const closeModalBtn = document.querySelector('.pop-up-close-btn');
 const emailPattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 const BASE_URL = 'https://portfolio-js.b.goit.study/api/requests';
 
+
+
+
+// Стан модального вікна
+let isModalOpen = false;
+
+
+
+
 // Валідація email
 const validateEmail = () => {
   if (emailPattern.test(emailInput.value)) {
@@ -23,6 +32,9 @@ const validateEmail = () => {
     emailIcon.classList.add('d-none');
   }
 };
+
+
+
 
 // Очищення форми та іконки після успішного відправлення
 const resetFormAndIcon = () => {
@@ -72,6 +84,12 @@ const sendForm = async (event) => {
     await axios.post(BASE_URL, userData);
 
     modalEl.classList.add('is-open');
+    isModalOpen = true;
+
+
+
+    // Слухач клавіатури on
+    document.addEventListener('keydown', handleKeyDown);
 
     resetFormAndIcon();
   } catch (error) {
@@ -90,6 +108,17 @@ const sendForm = async (event) => {
 // Закриття поп-ап
 const closeModal = () => {
   modalEl.classList.remove('is-open');
+  isModalOpen = false;
+
+  // Cлухач клавіатури off
+  document.removeEventListener('keydown', handleKeyDown);
+};
+
+// Обробка події натискання клавіші
+const handleKeyDown = (event) => {
+  if (event.key === 'Escape' && isModalOpen) {
+    closeModal();
+  }
 };
 
 
@@ -98,9 +127,6 @@ formEl.addEventListener('submit', sendForm);
 closeModalBtn.addEventListener('click', closeModal);
 modalEl.addEventListener('click', (event) => {
   if (event.target === modalEl) closeModal();
-});
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') closeModal();
 });
 
 // Скидання форми при завантаженні сторінки
