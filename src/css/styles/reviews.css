@@ -104,12 +104,12 @@
   fill: var(--hover-grey);
 }
 .swiper-button-disabled .btn-arrow {
-  border: 1px solid var(--light-grey);
+  border: 1px solid var(--hover-grey);
 }
 
 .swiper-button-disabled .btn-arrow-color {
-  stroke: var(--light-grey);
-  fill: var(--light-grey);
+  stroke: var(--hover-grey);
+  fill: var(--white);
 }
 
 .swiper-button-disabled:hover {
@@ -118,8 +118,8 @@
 }
 
 .swiper-button-disabled:hover .btn-arrow-color {
-  stroke: var(--light-grey);
-  fill: var(--light-grey);
+  stroke: var(--hover-grey);
+  fill: var(--white);
 }
 
 @media only screen and (min-width: 768px) {
