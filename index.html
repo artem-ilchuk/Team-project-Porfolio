@@ -16,7 +16,7 @@
   <script type="module" crossorigin src="/Team-project-Porfolio/index.js"></script>
   <link rel="modulepreload" crossorigin href="/Team-project-Porfolio/assets/vendor-B6OOYGta.js">
   <link rel="stylesheet" crossorigin href="/Team-project-Porfolio/assets/vendor-B9Q3JDqL.css">
-  <link rel="stylesheet" crossorigin href="/Team-project-Porfolio/assets/index-m4OlMOSi.css">
+  <link rel="stylesheet" crossorigin href="/Team-project-Porfolio/assets/index-CddHJMvB.css">
 </head>
 
 <body class="light">
@@ -24,37 +24,38 @@
 
 
   <header>
-    <div class="container hat-container">
-
-  <a class="hat-logo" href="./index.html">Lloyd<span class="logo-span-heder">Jefferson.</span></a>
-  <div class="switcher">
-    <div class="switcher__content">
-      <input type="checkbox" id="switch" />
-      <label for="switch">Toggle</label>
+    <div class="container header-container">
+  <div class="hat-container">
+    <a class="hat-logo" href="./index.html">Lloyd<span class="logo-span-heder">Jefferson.</span></a>
+    <div class="switcher">
+      <div class="switcher__content">
+        <input type="checkbox" id="switch" />
+        <label for="switch">Toggle</label>
+      </div>
     </div>
+    <nav class="navigation-header">
+      <ul class="navigation-list-head">
+        <li><a class="navigation-link-head" href=".#anchor1">About me</a></li>
+        <li><a class="navigation-link-head" href="#anchor2">Projects</a></li>
+        <li><a class="navigation-link-head" href="#anchor3">Contacts</a></li>
+      </ul>
+    </nav>
+    <div class="head-btn-order-sec">
+      <a class="head-order-project-btn" href="#anchor3">ORDER THE PROJECT</a>
+    </div>
+    <button class="burger-btn" type="button" data-menu-open>
+      <svg class="burger-icon" width="24" height="24">
+        <use href="/Team-project-Porfolio/assets/sprite--VaK85Wo.svg#icon-menu"></use>
+      </svg>
+    </button>
   </div>
-  <nav class="navigation-header">
-    <ul class="navigation-list-head">
-      <li><a class="navigation-link-head" href=".#anchor1">About me</a></li>
-      <li><a class="navigation-link-head" href="#anchor2">Projects</a></li>
-      <li><a class="navigation-link-head" href="#anchor3">Contacts</a></li>
-    </ul>
-  </nav>
-  <div class="head-btn-order-sec">
-    <a class="head-order-project-btn" href="#anchor3">ORDER THE PROJECT</a>
-  </div>
-  <button class="burger-btn" type="button" data-menu-open>
-    <svg class="burger-icon" width="24" height="24">
-      <use href="/Team-project-Porfolio/assets/sprite--VaK85Wo.svg#icon-menu"></use>
-    </svg>
-  </button>
 </div>
   </header>
 
 
 
   <main>
-    <div class="mobile-menu js-menu-container">
+    <div class="container mobile-menu js-menu-container">
   <div class="header-mob">
     <a class=" mob-hat-logo" href="./index.html">Lloyd<span class="logo-span-heder">Jefferson.</span></a>
     <button type="button" class="menu-close js-close-menu">
@@ -65,12 +66,6 @@
     </button>
   </div>
   <div class="mobile-menu-container">
-    <!-- <div  class="switcher-mob">
-            <div class="switcher__content">
-             <input type="checkbox" id="switch" />
-             <label for="switch">Toggle</label>
-            </div>
-           </div> -->
     <ul class="navigation-mob-list">
       <li class="mob-list-item">
         <a href="#anchor1" class="navigation-mob-link js-mob-link">About me</a>
@@ -299,7 +294,7 @@
         </div>
     </div>
 </section>
-    <section class="wrapper container_my_project">
+    <section class="container_my_project" id="anchor2">
     <div class="container ">
         <h2 class="title_my_project">
             MY <span class="green_tmp">PROJECTS</span>
