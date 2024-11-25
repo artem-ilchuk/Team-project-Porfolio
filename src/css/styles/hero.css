@@ -1,26 +1,20 @@
 .hero {
   color: var(--white);
-  padding-top: 192px;
+  padding-top: 64px;
   position: relative;
-  margin-bottom: 80px;
-}
-
-
-.hero-content {
-
+  padding-bottom: 80px;
   background-image: url(/img/hero/bg-mob.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position-y: 6px;
+  background-position-y: 10px;
+  background-position-x: 2px;
 }
-
 .hero-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 72px;
 }
-
 .hero-title {
   /*-----------------додав------*/
   max-width: 320px;
@@ -33,11 +27,9 @@
   text-transform: uppercase;
   color: var(--black);
 }
-
 .text-green {
   color: var(--accet-green);
 }
-
 .hero-images {
   overflow: hidden;
   width: 100%;
@@ -47,21 +39,17 @@
   margin: 0 auto;
   z-index: 10;
 }
-
 .hero-images img {
   width: 100%;
 }
-
 .social-list {
   display: none;
 }
 .hero-tx-con {
   padding: 36px 20px;
   margin: 0 auto;
-
   background-color: var(--light-grey);
 }
-
 .hero-text {
   font-weight: 400;
   font-size: 18px;
@@ -69,13 +57,8 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
-  /* padding: 32px 20px; */
   color: var(--black);
-  /*-----------------додав------*/
-
-  /*-----------------додав------*/
 }
-
 @media screen and (max-width: 340px) and (min-width: 280px) {
   .hero-title {
     display: flex;
@@ -85,45 +68,33 @@
     font-size: 60px;
   }
 }
-
 @media screen and (min-width: 768px) {
-  .hero-container {
+  .hero {
     background-image: url(/img/hero/bg-tab.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-y: 6px;
-    background-position-x: -11px;
+    background-position-y: -40px;
+    background-position-x: -10px;
   }
-
   .hero-title {
-    /*-----------------додав------*/
     width: 704px;
-    /*-----------------додав------*/
+    max-width: 100%;
     font-family: 'Impact', sans-serif;
     font-weight: 400;
-    font-size: 136px;
+    font-size: 124px;
     line-height: 1.14706;
     letter-spacing: 0.01em;
     text-transform: uppercase;
     color: var(--black);
   }
-
-  .hero-title {
-    font-size: 124px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-  }
-
   .hero-images {
-
-    margin: -120px 0 0 auto;
+    margin: -90px 0 0 auto;
+    margin-right: 50px;
   }
-
   .background-color {
     display: block;
     position: absolute;
   }
-
   .hero-tx-con {
     padding: 64px 32px;
   }
@@ -137,91 +108,69 @@
     text-transform: uppercase;
     text-align: center;
   }
-
   .hero-bg {
     position: absolute;
     top: 0;
     right: -5px;
     z-index: -1;
-    /* трохи змінив розміщення,
-        щоб було більш-менш сжоже
-        на макет */
   }
 }
-
 @media screen and (min-width: 1280px) {
   .hero-content {
     display: flex;
     flex-wrap: wrap;
   }
-
-  
-
-  
-  .hero-container {
+  .hero {
+    padding-top: 192px;
+    padding-bottom: 164px;
+  }
+  .hero-images {
+    margin: -170px 0 0;
+  }
+  .hero {
     background-image: url(/img/hero/bg-desk.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-y: -53px;
-    background-position-x: 485px;
+    background-position-y: -190px;
+    background-position-x: 450px;
   }
-
   .container {
     max-width: 1280px;
   }
-
   .hero-title-list-container {
-    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-
   .hero-title {
     align-self: flex-end;
-    margin-bottom: 80px;
     font-size: 136px;
-    line-height: 1.14706;
-    max-width: 660px;
-    /*-----------------видалити------*/
-    /* padding: 64px 32px; */
-    /*-----------------видалити------*/
-    /*-----------------додав------*/
-    padding: 0;
-    /* margin-bottom: 80px; */
-    /*-----------------додав------*/
+    line-height: 116%;
+    max-width: 100%;
   }
-
   .social-list {
     display: flex;
     padding-bottom: 42px;
   }
-
   .hero-images {
     max-width: 488px;
     width: 100%;
-    padding-top: 16px;
   }
-
   .social-list {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 40px;
   }
-
   .social-link {
     color: var(--black);
     transition: color ease-in-out 0.2s;
   }
-
   .social-link:hover {
     color: var(--hover-green);
   }
-
-   .hero-tx-con {
-    padding: 120px 136px;
+  .hero-tx-con {
     margin: 0 auto;
     background-color: var(--light-grey);
-  } 
-} 
+  }
+}

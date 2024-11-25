@@ -1,6 +1,9 @@
+.tech-skils-container {
+  padding-bottom: 80px;
+}
+
 .skills-animation {
   height: 244px;
-  margin-bottom: 80px;
 }
 
 .marquee-1,
@@ -86,9 +89,12 @@
 }
 
 @media screen and (min-width: 768px) {
+  .tech-skils-container {
+    padding-bottom: 124px;
+  }
+
   .skills-animation {
     height: 280px;
-    margin-bottom: 124px;
   }
 
   .marquee-1,
@@ -105,8 +111,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .tech-skils-container {
+    padding-bottom: 164px;
+  }
   .skills-animation {
     height: 280px;
-    margin-bottom: 164px;
   }
 }
