@@ -14,8 +14,10 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 1s cubic-bezier(0.4, 0, 0.2, 1);
+ 
+    
 }
 
 .mobile-menu-container {
@@ -27,15 +29,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex: 1;
+ 
+  padding-right: 20px;
+  padding-left: 20px;
+
 }
 
 .mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 1s cubic-bezier(0.4, 0, 0.2, 1);
+  
+
 }
 
 .header-mob {
@@ -45,7 +52,8 @@
   align-items: center;
   width: 100%;
   max-width: 360px;
-  padding: 20px 0;
+  padding: 20px;
+ 
 }
 
 .mob-hat-logo {
@@ -70,7 +78,7 @@
 }
 
 .navigation-mob-list {
-  margin-top: 250px;
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,7 +106,7 @@
   max-width: 320px;
   height: 48px;
   background: var(--accet-green);
-  margin-top: 180px;
+  margin-top: 60px;
   margin-bottom: 76px;
 }
 
@@ -119,7 +127,37 @@
   margin: 50px;
 }
 
-@media screen and (max-width: 355px) and (min-width: 280px) {
+.mob-social-list {
+ background: rgb(42, 45, 50);
+  height: 232px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+
+
+}
+
+
+.mob-social-link {
+ font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: var(--black);
+}
+
+.mob-social-link:checked,
+.mob-social-link:hover,
+.mob-social-link:focus {
+  color: var(--hover-green);
+}
+
+
+@media screen and (max-width: 360px) and (min-width: 320px) {
   .mob-order-project-btn {
     margin: 30px;
   }
@@ -127,29 +165,34 @@
 
 @media screen and (min-width: 768px) {
   .header-mob {
-    padding: 32px 0;
+    max-width: 768px;
+    padding: 32px;
   }
-  .mobile-menu {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
+
+ 
   .mobile-menu-container {
     background-image: url('/img/hero/bg-tab.png');
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .mob-hat-logo {
     font-size: 32px;
   }
 
-  .header-mob {
-    max-width: 768px;
-  }
 
   .navigation-mob-list {
     margin-top: 356px;
+    margin-bottom: 348px;
+   
   }
 
   .mob-btn-order-sec {
-    margin-top: 300px;
+    display: none;
+  }
+  .mob-social-list {
+    flex-direction: row;
+    gap: 40px;
+     height: 104px;
   }
 }
