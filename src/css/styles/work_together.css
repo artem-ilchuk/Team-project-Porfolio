@@ -2,7 +2,7 @@
   position: relative;
   z-index: 1;
   padding-top: 80px;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -173,7 +173,7 @@
     position: relative;
     z-index: 1;
    padding-top: 124px;
-    margin-bottom: 124px;
+    padding-bottom: 124px;
     background-repeat: no-repeat;
     background-size: 336px 260px;
     overflow: visible;
@@ -231,7 +231,7 @@
   .work-together {
     z-index: 1;
 padding-top: 164px;
-    margin-bottom: 164px;
+    padding-bottom: 164px;
         max-width: 100%;
         position: relative;
         background-repeat: no-repeat;
