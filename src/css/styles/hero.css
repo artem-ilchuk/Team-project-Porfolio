@@ -1,14 +1,19 @@
 .hero {
   color: var(--white);
-  padding-top: 64px;
-  position: relative;
   padding-bottom: 80px;
+}
+.hero-bg {
+  margin: 0 auto;
+  padding-top: 64px;
+  /* position: relative; */
+
   background-image: url(/img/hero/bg-mob.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: 10px;
   background-position-x: 2px;
 }
+
 .hero-top {
   display: flex;
   justify-content: space-between;
@@ -58,6 +63,8 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--black);
+  max-width: 320px;
+  margin: 0 auto;
 }
 @media screen and (max-width: 340px) and (min-width: 280px) {
   .hero-title {
@@ -69,13 +76,14 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .hero {
+  .hero-bg {
     background-image: url(/img/hero/bg-tab.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: -40px;
     background-position-x: -10px;
   }
+
   .hero-title {
     width: 704px;
     max-width: 100%;
@@ -93,14 +101,14 @@
   }
   .background-color {
     display: block;
-    position: absolute;
+    /* position: absolute; */
   }
   .hero-tx-con {
     padding: 64px 32px;
   }
   .hero-text {
-    max-width: 1008px;
-    margin: 0 auto;
+    max-width: 704px;
+
     font-weight: 500;
     font-size: 36px;
     line-height: 1.33;
@@ -109,7 +117,7 @@
     text-align: center;
   }
   .hero-bg {
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     right: -5px;
     z-index: -1;
@@ -120,20 +128,18 @@
     display: flex;
     flex-wrap: wrap;
   }
-  .hero {
+  .hero-bg {
     padding-top: 192px;
-    padding-bottom: 164px;
-  }
-  .hero-images {
-    margin: -170px 0 0;
-  }
-  .hero {
     background-image: url(/img/hero/bg-desk.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: -190px;
     background-position-x: 450px;
   }
+  .hero-images {
+    margin: -170px 0 0;
+  }
+
   .container {
     max-width: 1280px;
   }

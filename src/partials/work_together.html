@@ -1,70 +1,74 @@
 <section class="work-together" id="anchor3">
   <div class="container together-container">
-    <h2 class="together-title">
-      <span class="together-title-span">let's</span> work<br />
-      together
-    </h2>
-    <div class="together-position">
+    <div class="together-bg">
 
-      <div>
-        <h3 class="together-subtittle">
-          Contact me to transform your ideas into exceptional solutions.
-        </h3>
-        <ul class="together-list">
-          <li class="together-item">
-            <a class="together-link" href="tel:+380904567890">
-              <svg width="24" height="24" class="together-icon">
-                <use href="/img/sprite.svg#icon-phone"></use>
+      <h2 class="together-title">
+        <span class="together-title-span">let's</span> work<br />
+        together
+      </h2>
+      <div class="together-position">
+
+        <div>
+          <h3 class="together-subtittle">
+            Contact me to transform your ideas into exceptional solutions.
+          </h3>
+          <ul class="together-list">
+            <li class="together-item">
+              <a class="together-link" href="tel:+380904567890">
+                <svg width="24" height="24" class="together-icon">
+                  <use href="/img/sprite.svg#icon-phone"></use>
+                </svg>
+                <span>+38 090 456 78 90</span>
+              </a>
+            </li>
+
+            <li class="together-item">
+              <a class="together-link" href="mailto:lloydjefferson@gmail.com">
+                <svg width="24" height="24" class="together-icon">
+                  <use href="/img/sprite.svg#icon-mail"></use>
+                </svg>
+                <span>lloydjefferson@gmail.com</span>
+              </a>
+            </li>
+
+            <li class="together-item together-contacts-location">
+              <a class="together-link" href="mailto:lloydjefferson@gmail.com">
+                <svg width="24" height="24" class="together-icon">
+                  <use href="/img/sprite.svg#icon-icon-geo"></use>
+                </svg>
+                <span>USA, New York</span>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+
+
+        <form novalidate class="together-form" action="#">
+          <div class="form-block">
+
+            <label class="form-label" for="user-email">Email</label>
+            <div class="input-container">
+              <input required class="form-input-name" type="text" id="user-email" name="user-email"
+                placeholder="Your email*" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" />
+              <label id="email-icon" class="visually-hidden d-none">Enter email</label>
+              <svg width="16" height="16" class="email-correct-icon">
+                <use href="/img/sprite.svg#icon-success-filled"></use>
               </svg>
-              <span>+38 090 456 78 90</span>
-            </a>
-          </li>
-
-          <li class="together-item">
-            <a class="together-link" href="mailto:lloydjefferson@gmail.com">
-              <svg width="24" height="24" class="together-icon">
-                <use href="/img/sprite.svg#icon-mail"></use>
-              </svg>
-              <span>lloydjefferson@gmail.com</span>
-            </a>
-          </li>
-
-          <li class="together-item together-contacts-location">
-            <a class="together-link" href="mailto:lloydjefferson@gmail.com">
-              <svg width="24" height="24" class="together-icon">
-                <use href="/img/sprite.svg#icon-icon-geo"></use>
-              </svg>
-              <span>USA, New York</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-
-
-      <form novalidate class="together-form" action="#">
-        <div class="form-block">
-
-          <label class="form-label" for="user-email">Email</label>
-          <div class="input-container">
-            <input required class="form-input-name" type="text" id="user-email" name="user-email"
-              placeholder="Your email*" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" />
-            <label id="email-icon" class="visually-hidden d-none">Enter email</label>
-            <svg width="16" height="16" class="email-correct-icon">
-              <use href="/img/sprite.svg#icon-success-filled"></use>
-            </svg>
+            </div>
+            <span class="together-invalid-email d-none">Invalid email, try again</span>
           </div>
-          <span class="together-invalid-email d-none">Invalid email, try again</span>
-        </div>
 
-        <div class="form-textarea">
-          <label class="form-label" for="user-comment">Comment</label>
-          <textarea required class="input-textarea" id="user-comment" name="user-comment"
-            placeholder="Message"></textarea>
-        </div>
+          <div class="form-textarea">
+            <label class="form-label" for="user-comment">Comment</label>
+            <textarea required class="input-textarea" id="user-comment" name="user-comment"
+              placeholder="Message"></textarea>
+          </div>
 
-        <button class="form-btn" type="submit">SEND MESSAGE</button>
-      </form>
+          <button class="form-btn" type="submit">SEND MESSAGE</button>
+        </form>
+      </div>
     </div>
   </div>
 

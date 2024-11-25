@@ -7,7 +7,6 @@
   background-position: center;
   background-size: cover;
   overflow: visible;
-  
 }
 .together-container {
   position: relative;
@@ -169,20 +168,18 @@
 /* ---TABLET--- */
 
 @media screen and (min-width: 768px) {
-  .work-together {
+  .together-bg {
     position: relative;
     z-index: 1;
-   padding-top: 124px;
+    padding-top: 124px;
     padding-bottom: 124px;
     background-repeat: no-repeat;
     background-size: 336px 260px;
     overflow: visible;
     background-image: url(/img/work-together/bg-tab.png);
-    background-position-x: 93%;
+    background-position-x: 100%;
     background-position-y: 5px;
   }
-
-
 
   .together-title {
     font-family: Impact;
@@ -227,20 +224,19 @@
 
 /* ---DESKTOP--- */
 @media screen and (min-width: 1280px) {
-  
-  .work-together {
+  .together-bg {
     z-index: 1;
-padding-top: 164px;
+    padding-top: 164px;
     padding-bottom: 164px;
-        max-width: 100%;
-        position: relative;
-        background-repeat: no-repeat;
-        background-size: 526px 408px;
-        overflow: visible; 
-        background-image: url(/img/work-together/bg-desk.png);
-       background-position-x: 80%;
-       background-position-y: 40px;
-    }
+    max-width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 526px 408px;
+    overflow: visible;
+    background-image: url(/img/work-together/bg-desk.png);
+    background-position-x: 695px;
+    background-position-y: 40px;
+  }
 
   .together-subtittle {
     margin-bottom: 120px;
@@ -265,8 +261,8 @@ padding-top: 164px;
 }
 
 @media screen and (min-width: 1920px) {
-    .work-together {
-        background-position-x: 65%;
-        background-size: auto;
-    }
+  .work-together {
+    background-position-x: 65%;
+    background-size: auto;
+  }
 }

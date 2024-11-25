@@ -1,7 +1,6 @@
-.benefits {
+.benefits-container {
   padding-top: 80px;
   padding-bottom: 80px;
-  margin-bottom: 0;
 }
 
 .benefits-title {
@@ -62,7 +61,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .benefits {
+  .benefits-container {
     padding-top: 124px;
     padding-bottom: 124px;
   }
@@ -88,7 +87,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .benefits {
+  .benefits-container {
     padding-bottom: 164px;
     padding-top: 164px;
     position: relative;
@@ -100,11 +99,12 @@
     background-position-x: 95%;
     background-position-y: 50px;
   }
-  .benefits-container {
+
+  .benefirs-content {
     height: 676px;
   }
 
-  .benefits-container {
+  .benefirs-content {
     position: relative;
   }
   .benefits-title {
@@ -121,12 +121,5 @@
   }
   .empty {
     display: block;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .benefits {
-    background-position-x: 75%;
-    background-size: auto;
   }
 }
