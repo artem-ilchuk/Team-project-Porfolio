@@ -1,5 +1,5 @@
 .faq-section{
-    margin-bottom: 164px;
+    padding-bottom: 80px;
 }
 
 .faq-container {
@@ -160,13 +160,17 @@
         max-width: 768px;
     }
 
+        .faq-section {
+            padding-bottom: 124px;
+        }
 
     .faq-title {
         font-weight: 400;
         font-size: 108px;
         line-height: 115%;
         letter-spacing: 0.02em;
-    padding-left: 0;
+        padding-left: 0;
+        margin-bottom: 60px;
     }
 
     .ac .ac-trigger {
@@ -187,6 +191,10 @@
         max-width: 1280px;
     }
 
+    .faq-section {
+        padding-bottom: 164px;
+    }
+
     .faq {
         display: flex;
         justify-content: space-between;
@@ -198,10 +206,12 @@
         background-image: url(/img/faq/bg-desk.png);
         background-repeat: no-repeat;
         background-size: contain;
+        background-position-y: 36px;
     }
     
     .faq-title {
         width: 520px;
+        margin-bottom: 0;
     }
 
     .faq-title-decor {
