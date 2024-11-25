@@ -1,16 +1,13 @@
 .work-together {
   position: relative;
   z-index: 1;
-  margin-top: 80px;
+  padding-top: 80px;
   margin-bottom: 80px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   overflow: visible;
-}
-
-.bg-image {
-  display: none;
+  
 }
 .together-container {
   position: relative;
@@ -175,23 +172,17 @@
   .work-together {
     position: relative;
     z-index: 1;
-    margin-top: 124px;
+   padding-top: 124px;
     margin-bottom: 124px;
     background-repeat: no-repeat;
     background-size: 336px 260px;
     overflow: visible;
+    background-image: url(/img/work-together/bg-tab.png);
+    background-position-x: 93%;
+    background-position-y: 5px;
   }
 
-  .together-bg-img {
-    display: block;
-    position: absolute;
-    top: -116px;
-    right: 0;
-  }
 
-  .bg-image {
-    display: block;
-  }
 
   .together-title {
     font-family: Impact;
@@ -236,22 +227,20 @@
 
 /* ---DESKTOP--- */
 @media screen and (min-width: 1280px) {
+  
   .work-together {
     z-index: 1;
-    margin-top: 164px;
+padding-top: 164px;
     margin-bottom: 164px;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: auto 526px;
-    overflow: visible;
-  }
-
-  .together-bg-img {
-    display: block;
-    position: absolute;
-    top: -116px;
-    right: 0;
-  }
+        max-width: 100%;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: 526px 408px;
+        overflow: visible; 
+        background-image: url(/img/work-together/bg-desk.png);
+       background-position-x: 80%;
+       background-position-y: 40px;
+    }
 
   .together-subtittle {
     margin-bottom: 120px;
@@ -273,4 +262,11 @@
 
 .form-input-name-error {
   color: var(--error);
+}
+
+@media screen and (min-width: 1920px) {
+    .work-together {
+        background-position-x: 65%;
+        background-size: auto;
+    }
 }
