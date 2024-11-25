@@ -9,8 +9,6 @@
   overflow: visible;
   
 }
-
-
 .together-container {
   position: relative;
 }
@@ -265,7 +263,6 @@ padding-top: 164px;
 .form-input-name-error {
   color: var(--error);
 }
-
 
 @media screen and (min-width: 1920px) {
     .work-together {
