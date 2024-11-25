@@ -7,28 +7,30 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  loadMoreButton.addEventListener("click", () => {
-    const hiddenProjects = document.querySelectorAll(".list_my_project.hidden");
+
+  const allProjects = Array.from(document.querySelectorAll(".list_my_project"));
+  let hiddenProjects = allProjects.filter((project) => project.classList.contains("hidden"));
+
+
+  function loadMoreProjects() {
     const remainingProjects = hiddenProjects.length;
 
-    let shown = 0;
-
-    hiddenProjects.forEach((project) => {
-      if (shown < projectsPerClick) {
-        project.style.display = "block";
-        setTimeout(() => {
-          project.classList.remove("hidden");
-          project.classList.add("show");
-        }, 100);
-        shown++;
-      }
+    hiddenProjects.slice(0, projectsPerClick).forEach((project) => {
+      project.style.display = "block";
+      project.classList.remove("hidden");
+      project.classList.add("show");
     });
 
- 
-    if (remainingProjects <= projectsPerClick) {
-      setTimeout(() => {
-        loadMoreButton.style.display = "none";
-      }, 100);
+
+    hiddenProjects = hiddenProjects.slice(projectsPerClick);
+
+
+    if (!hiddenProjects.length) {
+      loadMoreButton.style.display = "none";
+      loadMoreButton.setAttribute("aria-hidden", "true");
     }
-  });
-});
+  }
+
+
+  loadMoreButton.addEventListener("click", loadMoreProjects);
+})
