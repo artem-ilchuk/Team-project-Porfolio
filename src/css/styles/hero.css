@@ -1,26 +1,16 @@
-/* .container {
-    min-width: 300px;
-    max-width: 360px;
-    padding: 0 20px;
-    margin: 0 auto;
-} */
-
 .hero {
   color: var(--white);
   padding-top: 80px;
-  /*-----------------додав------*/
   position: relative;
   margin-bottom: 80px;
-
-  /*-----------------додав------*/
 }
 
 .hero-content {
   padding-top: 64px;
-    background-image: url(/img/hero/bg-mob.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 6px;
+  background-image: url(/img/hero/bg-mob.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 6px;
 }
 
 .hero-top {
@@ -32,7 +22,7 @@
 
 .hero-title {
   /*-----------------додав------*/
-  width: 320px;
+  max-width: 320px;
   /*-----------------додав------*/
   font-family: 'Impact', sans-serif;
   font-weight: 400;
@@ -61,7 +51,6 @@
   width: 100%;
 }
 
-
 .social-list {
   display: none;
 }
@@ -86,16 +75,26 @@
   /*-----------------додав------*/
 }
 
+@media screen and (max-width: 340px) and (min-width: 280px) {
+  .hero-title {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 60px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero-container {
     position: relative;
     padding-left: 32px;
     padding-right: 32px;
     background-image: url(/img/hero/bg-tab.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position-y: 6px;
-      background-position-x: -11px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 6px;
+    background-position-x: -11px;
   }
 
   .hero-title {
@@ -122,7 +121,6 @@
     margin: -120px 0 0 auto;
   }
 
- 
   .background-color {
     display: block;
     position: absolute;
@@ -159,14 +157,13 @@
   }
 
   .hero-container {
-        
     background-image: url(/img/hero/bg-desk.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: -53px;
     background-position-x: 485px;
-    }
-    
+  }
+
   .container {
     max-width: 1280px;
   }
@@ -204,7 +201,6 @@
     padding-top: 16px;
   }
 
- 
   .social-list {
     display: flex;
     align-items: center;
