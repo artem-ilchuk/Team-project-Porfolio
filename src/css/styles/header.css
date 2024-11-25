@@ -131,6 +131,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 20px 0;
 }
 
 .navigation-header {
@@ -162,7 +163,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
 }
 
 .switcher__content {
@@ -241,19 +241,18 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .hat {
-    height: 96px;
+  .hat-container {
+    padding: 32px 0;
   }
 
   .hat-logo {
-    /* font-size: 32px; */
-    padding: 32px;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
   }
 
   .head-btn-order-sec {
     display: block;
-    margin-top: 24px;
-    margin-bottom: 24px;
   }
 
   .navigation-header {
@@ -274,7 +273,6 @@ body {
     width: 217px;
     height: 48px;
     background-color: var(--accet-green);
-    padding: 12px, 24px;
   }
 
   .head-btn-order-sec:hover,
