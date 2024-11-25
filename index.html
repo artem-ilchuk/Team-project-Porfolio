@@ -16,7 +16,7 @@
   <script type="module" crossorigin src="/Team-project-Porfolio/index.js"></script>
   <link rel="modulepreload" crossorigin href="/Team-project-Porfolio/assets/vendor-B6OOYGta.js">
   <link rel="stylesheet" crossorigin href="/Team-project-Porfolio/assets/vendor-B9Q3JDqL.css">
-  <link rel="stylesheet" crossorigin href="/Team-project-Porfolio/assets/index-DF5BvTG8.css">
+  <link rel="stylesheet" crossorigin href="/Team-project-Porfolio/assets/index-CR9tJ8-0.css">
 </head>
 
 <body class="light">
@@ -92,52 +92,32 @@
         </h1>
         <ul class="social-list">
           <li class="social-item">
-            <a
-              class="social-link"
-              href="https://www.instagram.com/goitclub/"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >Instagram</a
-            >
+            <a class="social-link" href="https://www.instagram.com/goitclub/" target="_blank"
+              rel="noopener noreferrer nofollow">Instagram</a>
           </li>
           <li class="social-item">
-            <a
-              class="social-link"
-              href="https://t.me/junior_developer_ua"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >Telegram</a
-            >
+            <a class="social-link" href="https://t.me/junior_developer_ua" target="_blank"
+              rel="noopener noreferrer nofollow">Telegram</a>
           </li>
           <li class="social-item">
-            <a
-              class="social-link"
-              href="https://www.linkedin.com/school/goit-start-your-career-in-it"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >LinkedIn</a
-            >
+            <a class="social-link" href="https://www.linkedin.com/school/goit-start-your-career-in-it" target="_blank"
+              rel="noopener noreferrer nofollow">Linkedin</a>
           </li>
           <li class="social-item">
-            <a
-              class="social-link"
-              href="https://github.com/artem-ilchuk/Team-project-Porfolio"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >GitHub</a
-            >
+            <a class="social-link" href="https://github.com/artem-ilchuk/Team-project-Porfolio" target="_blank"
+              rel="noopener noreferrer nofollow">GitHub</a>
           </li>
         </ul>
       </div>
       <div class="hero-images">
-        <img
-          srcset="/Team-project-Porfolio/assets/imgdesk-Bw6TuFEW.png"
-          src="/Team-project-Porfolio/assets/imgdesk2x-8mEncIBL.png"
-          alt="Fullstack Developer"
-        />
-      </div>
-      <div class="hero-bg">
-        <!-- <img src="./img/hero/bg-mob.png" alt="Background Image" /> -->
+        <!-- <img srcset="./img/hero/imgdesk.png" src="./img/hero/imgdesk2x.png" alt="Fullstack Developer" /> -->
+        <picture class="hero-photo">
+          <source media="(min-width: 1280px)" srcset="/Team-project-Porfolio/assets/imgdesk-Bw6TuFEW.png 1x, /Team-project-Porfolio/assets/imgdesk2x-8mEncIBL.png 2x" />
+          <source media="(min-width: 768px)" srcset="/Team-project-Porfolio/assets/imgtab-CWAeNYsN.png 1x, /Team-project-Porfolio/assets/imgtab2x-C1kkjHjX.png 2x" />
+          <source media="(max-width: 767px)" srcset="/Team-project-Porfolio/assets/imgmob-D-suyQMr.png 1x, /Team-project-Porfolio/assets/imgmob2x-B2IuC9p-.png 2x" />
+          <img src="/img/about-me/hero/imgmob.png" alt="Fullstack Developer" width="276" height="416"
+            class="hero-image" />
+        </picture>
       </div>
     </div>
   </div>
@@ -150,7 +130,6 @@
     </p>
   </div>
 </section>
-
     <section class="about-me-wrapper" id="anchor1">
   <div class="container about-me-container">
     <h2 class="about-me-section">
@@ -294,7 +273,7 @@
         </div>
     </div>
 </section>
-    <section class="container_my_project" id="anchor2">
+    <section class="wrapper">
     <div class="container ">
         <h2 class="title_my_project">
             MY <span class="green_tmp">PROJECTS</span>
@@ -311,15 +290,14 @@
                         <p class="card_text_my_project">React, JavaScript, Node JS, Git</p>
                         <div class="card_my_project">
                             <h3 class="title_card_my_project">WALLET WEBSERVICE</h3>
-                            <form action="https://github.com/artem-ilchuk/Team-project-Porfolio" method="get"
-                                target="_blank">
-                                <button class="btn_my_project" type="submit">
+                            <div class="project-link-container">
+                                <a class="card-link" href="https://github.com/artem-ilchuk/Team-project-Porfolio" target="_blank">
                                     VISIT
                                     <svg width="24" height="24">
                                         <use class="icon_my_project" href="/Team-project-Porfolio/assets/sprite--VaK85Wo.svg#icon-arrow"></use>
                                     </svg>
-                                </button>
-                            </form>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
@@ -336,15 +314,14 @@
                         <p class="card_text_my_project">React, JavaScript, Node JS, Git</p>
                         <div class="card_my_project">
                             <h3 class="title_card_my_project">GREEN HARVEST ONLINE STORE</h3>
-                            <form action="https://github.com/artem-ilchuk/Team-project-Porfolio" method="get"
-                                target="_blank">
-                                <button class="btn_my_project" type="submit" target="_blank">
+                            <div class="project-link-container">
+                                <a class="card-link" href="https://github.com/artem-ilchuk/Team-project-Porfolio" target="_blank">
                                     VISIT
                                     <svg width="24" height="24">
                                         <use class="icon_my_project" href="/Team-project-Porfolio/assets/sprite--VaK85Wo.svg#icon-arrow"></use>
                                     </svg>
-                                </button>
-                            </form>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
@@ -360,15 +337,14 @@
                         <p class="card_text_my_project">React, JavaScript, Node JS, Git</p>
                         <div class="card_my_project">
                             <h3 class="title_card_my_project">ENGLISH EXCELLENCE WEBSERVICE</h3>
-                            <form action="https://github.com/artem-ilchuk/Team-project-Porfolio" method="get"
-                                target="_blank">
-                                <button class="btn_my_project" type="submit" target="_blank">
+                            <div class="project-link-container">
+                                <a class="card-link" href="https://github.com/artem-ilchuk/Team-project-Porfolio" target="_blank">
                                     VISIT
                                     <svg width="24" height="24">
                                         <use class="icon_my_project" href="/Team-project-Porfolio/assets/sprite--VaK85Wo.svg#icon-arrow"></use>
                                     </svg>
-                                </button>
-                            </form>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
@@ -385,15 +361,14 @@
                         <p class="card_text_my_project">React, JavaScript, Node JS, Git</p>
                         <div class="card_my_project">
                             <h3 class="title_card_my_project">POWER PULSE WEBSERVICE</h3>
-                            <form action="https://github.com/artem-ilchuk/Team-project-Porfolio" method="get"
-                                target="_blank">
-                                <button class="btn_my_project" type="submit" target="_blank">
+                            <div class="project-link-container">
+                                <a class="card-link" href="https://github.com/artem-ilchuk/Team-project-Porfolio" target="_blank">
                                     VISIT
                                     <svg width="24" height="24">
                                         <use class="icon_my_project" href="/Team-project-Porfolio/assets/sprite--VaK85Wo.svg#icon-arrow"></use>
                                     </svg>
-                                </button>
-                            </form>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
@@ -410,15 +385,14 @@
                         <p class="card_text_my_project">React, JavaScript, Node JS, Git</p>
                         <div class="card_my_project">
                             <h3 class="title_card_my_project">MIMINO WEBSITE</h3>
-                            <form action="https://github.com/artem-ilchuk/Team-project-Porfolio" method="get"
-                                target="_blank">
-                                <button class="btn_my_project" type="submit" target="_blank">
+                            <div class="project-link-container">
+                                <a class="card-link" href="https://github.com/artem-ilchuk/Team-project-Porfolio" target="_blank">
                                     VISIT
                                     <svg width="24" height="24">
                                         <use class="icon_my_project" href="/Team-project-Porfolio/assets/sprite--VaK85Wo.svg#icon-arrow"></use>
                                     </svg>
-                                </button>
-                            </form>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
@@ -435,15 +409,14 @@
                         <p class="card_text_my_project">React, JavaScript, Node JS, Git</p>
                         <div class="card_my_project">
                             <h3 class="title_card_my_project">VYSHYVANKA VIBES LANDING PAGE</h3>
-                            <form action="https://github.com/artem-ilchuk/Team-project-Porfolio" method="get"
-                                target="_blank">
-                                <button class="btn_my_project" type="submit" target="_blank">
+                            <div class="project-link-container">
+                                <a class="card-link" href="https://github.com/artem-ilchuk/Team-project-Porfolio" target="_blank">
                                     VISIT
                                     <svg width="24" height="24">
                                         <use class="icon_my_project" href="/Team-project-Porfolio/assets/sprite--VaK85Wo.svg#icon-arrow"></use>
                                     </svg>
-                                </button>
-                            </form>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
@@ -459,15 +432,14 @@
                         <p class="card_text_my_project">React, JavaScript, Node JS, Git</p>
                         <div class="card_my_project">
                             <h3 class="title_card_my_project">CHEGO JEWELRY WEBSITE</h3>
-                            <form action="https://github.com/artem-ilchuk/Team-project-Porfolio" method="get"
-                                target="_blank">
-                                <button class="btn_my_project" type="submit" target="_blank">
+                            <div class="project-link-container">
+                                <a class="card-link" href="https://github.com/artem-ilchuk/Team-project-Porfolio" target="_blank">
                                     VISIT
                                     <svg width="24" height="24">
                                         <use class="icon_my_project" href="/Team-project-Porfolio/assets/sprite--VaK85Wo.svg#icon-arrow"></use>
                                     </svg>
-                                </button>
-                            </form>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
