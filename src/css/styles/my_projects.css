@@ -42,11 +42,6 @@
   transform: translateY(0);
 }
 
-/* .container_my_project {
-    padding-bottom: 92px;
-    position: relative;
-} */
-
 .title_my_project {
   margin-bottom: 40px;
   text-align: center;
@@ -178,10 +173,6 @@
     font-size: 20px;
     line-height: 160%;
   }
-
-  /* .container_my_project {
-        padding-bottom: 136px;
-    } */
 }
 
 @media screen and (min-width: 1280px) {
@@ -189,8 +180,4 @@
     width: 1008px;
     height: 580px;
   }
-
-  /* .container_my_project {
-        padding-bottom: 176px;
-    } */
 }
