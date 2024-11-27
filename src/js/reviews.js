@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Keyboard, Mousewheel, Navigation, Pagination } from 'swiper/modules';
+import { Keyboard, Mousewheel, Navigation} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -70,7 +70,7 @@ function createGallery(data) {
 
 function launchSwiper() {
   const swiper = new Swiper('.swiper', {
-    modules: [Navigation, Pagination, Keyboard, Mousewheel],
+    modules: [Navigation, Keyboard, Mousewheel],
     navigation: {
       nextEl: '.reviews-button-next',
       prevEl: '.reviews-button-prev',
