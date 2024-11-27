@@ -11,9 +11,13 @@
   line-height: 1.23;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 40px;
 }
 .span-about-me {
   color: var(--accet-green);
+}
+.biography-container {
+  margin-bottom: 40px;
 }
 .biography-description {
   margin-top: 32px;
@@ -42,9 +46,6 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-}
-.education-title {
-  margin-top: 40px;
 }
 .biography-title,
 .education-title,
@@ -78,12 +79,16 @@
     justify-content: space-between;
     margin-bottom: 60px;
   }
+  .biography-container {
+    margin-bottom: 0;
+  }
   .biography-description {
-    width: 336px;
+    max-width: 336px;
   }
   .about-me-picture {
     display: flex;
     gap: 32px;
+    margin-bottom: 60px;
   }
   .about-me-image {
     width: 336px;
@@ -112,7 +117,6 @@
   }
   .role-container {
     align-items: center;
-    padding-top: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -131,16 +135,18 @@
   .about-me-image {
     width: 384px;
     height: 448px;
+    margin-top: 272px;
   }
   .about-me-picture {
     justify-content: flex-end;
     gap: 136px;
+    margin-bottom: 80px;
   }
   .container-education-role {
     padding-left: 210px;
     gap: 136px;
   }
   .biography-description {
-    width: 488px;
+    max-width: 488px;
   }
 }
