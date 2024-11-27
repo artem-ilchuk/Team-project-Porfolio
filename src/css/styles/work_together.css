@@ -1,12 +1,9 @@
 .work-together {
-  position: relative;
-  z-index: 1;
   padding-top: 80px;
   padding-bottom: 80px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  overflow: visible;
   
 }
 .together-container {
@@ -79,6 +76,12 @@
   visibility: hidden;
 }
 
+.together-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
 .form-input-name {
   width: 100%;
   padding: 16px;
@@ -125,7 +128,6 @@
   font-weight: 300;
   line-height: 1.5em;
   letter-spacing: 0.5px;
-  margin-bottom: 32px;
   resize: none;
 }
 
@@ -149,16 +151,19 @@
   background-color: var(--hover-green);
 }
 .together-invalid-email {
-  opacity: 1;
-  visibility: visible;
-  display: block;
+  position: absolute;
+  bottom: -20px;
+  left: 16px;
   color: var(--error);
   font-family: Poppins;
   font-size: 12px;
   font-weight: 300;
   line-height: 1.33em;
   letter-spacing: 0.5px;
-  margin-bottom: 20px;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+
 }
 
 .d-none {
@@ -166,20 +171,24 @@
   visibility: hidden;
 }
 
+.iziToast {
+  position: fixed !important;
+  right: 1rem !important;
+  top: 1rem !important; 
+  z-index: 9999;  
+}
+
 /* ---TABLET--- */
 
 @media screen and (min-width: 768px) {
   .work-together {
-    position: relative;
-    z-index: 1;
-   padding-top: 124px;
+    padding-top: 124px;
     padding-bottom: 124px;
     background-repeat: no-repeat;
     background-size: 336px 260px;
-    overflow: visible;
     background-image: url(/img/work-together/bg-tab.png);
-    background-position-x: 93%;
-    background-position-y: 5px;
+    background-position-x: 92%;
+    background-position-y: 6px;
   }
 
 
@@ -229,16 +238,14 @@
 @media screen and (min-width: 1280px) {
   
   .work-together {
-    z-index: 1;
-padding-top: 164px;
-    padding-bottom: 164px;
+    padding-top: 164px;
+  padding-bottom: 164px;
         max-width: 100%;
         position: relative;
         background-repeat: no-repeat;
         background-size: 526px 408px;
-        overflow: visible; 
         background-image: url(/img/work-together/bg-desk.png);
-       background-position-x: 80%;
+       background-position-x: 95%;
        background-position-y: 40px;
     }
 
@@ -253,10 +260,10 @@ padding-top: 164px;
 
   .together-position {
     display: flex;
-    gap: 136px;
+justify-content: space-between;
   }
   .form-input-name {
-    width: 560px;
+    width: 592px;
   }
 }
 
