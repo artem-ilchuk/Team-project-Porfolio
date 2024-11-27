@@ -1,6 +1,7 @@
 .hero {
   color: var(--white);
   padding-bottom: 80px;
+  padding-top: 192px;
 }
 .hero-bg {
   margin: 0 auto;
@@ -125,7 +126,7 @@
     flex-wrap: wrap;
   }
   .hero-bg {
-    padding-top: 192px;
+    /* padding-top: 192px; */
     background-image: url(/img/hero/bg-desk.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -174,5 +175,9 @@
   .hero-tx-con {
     margin: 0 auto;
     background-color: var(--light-grey);
+  }
+
+  .hero-text {
+    max-width: 1008px;
   }
 }
