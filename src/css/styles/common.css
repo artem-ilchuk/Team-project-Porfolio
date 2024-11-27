@@ -50,6 +50,7 @@ html {
 /*------ common ----*/
 
 .container {
+  min-width: 320px;
   max-width: 360px;
   padding: 0 20px;
   margin: 0 auto;
@@ -73,6 +74,14 @@ html {
     max-width: 768px;
     padding: 0 32px;
   }
+
+  .preloader-txt {
+    font-size: 28px;
+  }
+
+  .loader {    
+    font-size: 12px;    
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -80,4 +89,16 @@ html {
     max-width: 1280px;
     padding: 0 32px;
   }
+
+  .preloader-txt {
+    font-size: 48px;
+  }
+
+  .loader {    
+    font-size: 14px;    
+  }
 }
+
+
+ 
+
