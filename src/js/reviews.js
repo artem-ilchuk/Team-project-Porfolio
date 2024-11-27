@@ -2,7 +2,6 @@ import Swiper from 'swiper';
 import { Keyboard, Mousewheel, Navigation} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import 'swiper/css/keyboard';
 import 'swiper/css/mousewheel';
 import '../css/styles/reviews.css';
