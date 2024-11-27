@@ -1,20 +1,15 @@
-body {
-  transition: all 1000ms ease;
-}
-
-.footer-wrapper {
-  border-top: 1px solid var(--faq-footer-line);
-}
 .footer-container {
   padding: 0;
   max-width: 360px;
   min-width: 320px;
+  /* border-top: 1px solid var(--faq-footer-line); */
 }
 
-.footer {
+footer {
   padding: 0;
   padding-top: 40px;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-top: 1px solid var(--faq-footer-line);
 }
 
 .footer-logo-container {

@@ -1,12 +1,12 @@
-.skills-animation {
-  height: 244px;
-  margin-bottom: 80px;
+.tech-skils-container {
+  padding-bottom: 80px;
 }
 
-.tech-skils {
-  max-width: 360px;
-  margin: 0 auto;
+.skills-animation {
+  height: 244px;
+  overflow: hidden;
 }
+
 .marquee-1,
 .marquee-2 {
   overflow: hidden;
@@ -17,7 +17,6 @@
   align-items: center;
   width: 100%;
   z-index: 1;
-  /* margin-left: -27%; */
 }
 
 .marquee-2 {
@@ -91,12 +90,12 @@
 }
 
 @media screen and (min-width: 768px) {
-  .tech-skils {
-    max-width: 768px;
+  .tech-skils-container {
+    padding-bottom: 124px;
   }
+
   .skills-animation {
     height: 280px;
-    margin-bottom: 124px;
   }
 
   .marquee-1,
@@ -113,11 +112,10 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .tech-skils {
-    max-width: 1280px;
+  .tech-skils-container {
+    padding-bottom: 164px;
   }
   .skills-animation {
     height: 280px;
-    margin-bottom: 164px;
   }
 }

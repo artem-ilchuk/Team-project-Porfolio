@@ -5,27 +5,32 @@ h4,
 h5,
 h6,
 p {
+  transition: all 1000ms ease;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 p:last-child {
+  transition: all 1000ms ease;
   margin-bottom: 0;
 }
 
 ul,
 ol {
+  transition: all 1000ms ease;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 a {
+  transition: all 1000ms ease;
   color: currentColor;
   text-decoration: none;
 }
 
 button {
+  transition: all 1000ms ease;
   cursor: pointer;
   border: none;
   border-radius: 8px;
@@ -38,10 +43,12 @@ img {
 }
 
 address {
+  transition: all 1000ms ease;
   font-style: normal;
 }
 
 input,
 textarea {
+  transition: all 1000ms ease;
   outline: none;
 }

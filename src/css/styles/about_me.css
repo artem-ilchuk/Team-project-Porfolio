@@ -1,7 +1,7 @@
 .about-me-wrapper {
   line-height: 1.5;
   letter-spacing: 0.03em;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 .about-me-section {
   font-family: 'Impact', sans-serif;
@@ -16,8 +16,11 @@
 .span-about-me {
   color: var(--accet-green);
 }
+.biography-container {
+  margin-bottom: 40px;
+}
 .biography-description {
-  padding-top: 32px;
+  margin-top: 32px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -44,9 +47,6 @@
   flex-direction: column;
   gap: 32px;
 }
-.education-title {
-  padding-top: 40px;
-}
 .biography-title,
 .education-title,
 .role-title {
@@ -69,7 +69,7 @@
 }
 @media screen and (min-width: 768px) {
   .about-me-wrapper {
-    margin-bottom: 124px;
+    padding-bottom: 124px;
   }
   .about-me-section {
     font-size: 108px;
@@ -79,12 +79,16 @@
     justify-content: space-between;
     margin-bottom: 60px;
   }
+  .biography-container {
+    margin-bottom: 0;
+  }
   .biography-description {
-    width: 336px;
+    max-width: 336px;
   }
   .about-me-picture {
     display: flex;
     gap: 32px;
+    margin-bottom: 60px;
   }
   .about-me-image {
     width: 336px;
@@ -113,12 +117,11 @@
   }
   .role-container {
     align-items: center;
-    padding-top: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
   .about-me-wrapper {
-    margin-bottom: 164px;
+    padding-bottom: 164px;
   }
   .about-me-container {
     background-image: url(/img/about-me/bg-desk.png);
@@ -137,16 +140,13 @@
   .about-me-picture {
     justify-content: flex-end;
     gap: 136px;
-  }
-  .container-education-role {
-    align-items: flex-start;
-    justify-content: center;
-    gap: 136px;
-  }
-  .biography-container {
     margin-bottom: 80px;
   }
+  .container-education-role {
+    padding-left: 210px;
+    gap: 136px;
+  }
   .biography-description {
-    width: 488px;
+    max-width: 488px;
   }
 }

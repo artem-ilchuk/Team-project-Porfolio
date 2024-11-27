@@ -1,16 +1,15 @@
 .hero {
   color: var(--white);
+  padding-bottom: 80px;
   padding-top: 80px;
-  position: relative;
-  margin-bottom: 80px;
 }
-
-.hero-content {
-  padding-top: 64px;
+.hero-bg {
+  margin: 0 auto;
   background-image: url(/img/hero/bg-mob.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position-y: 6px;
+  background-position-y: 10px;
+  background-position-x: 2px;
 }
 
 .hero-top {
@@ -19,11 +18,8 @@
   align-items: center;
   gap: 72px;
 }
-
 .hero-title {
-  /*-----------------додав------*/
   max-width: 320px;
-  /*-----------------додав------*/
   font-family: 'Impact', sans-serif;
   font-weight: 400;
   font-size: 64px;
@@ -32,11 +28,9 @@
   text-transform: uppercase;
   color: var(--black);
 }
-
 .text-green {
   color: var(--accet-green);
 }
-
 .hero-images {
   overflow: hidden;
   width: 100%;
@@ -46,21 +40,17 @@
   margin: 0 auto;
   z-index: 10;
 }
-
 .hero-images img {
   width: 100%;
 }
-
 .social-list {
   display: none;
 }
 .hero-tx-con {
   padding: 36px 20px;
   margin: 0 auto;
-  max-width: 360px;
   background-color: var(--light-grey);
 }
-
 .hero-text {
   font-weight: 400;
   font-size: 18px;
@@ -68,13 +58,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
-  /* padding: 32px 20px; */
   color: var(--black);
-  /*-----------------додав------*/
-
-  /*-----------------додав------*/
+  max-width: 320px;
+  margin: 0 auto;
 }
-
 @media screen and (max-width: 340px) and (min-width: 280px) {
   .hero-title {
     display: flex;
@@ -84,143 +71,119 @@
     font-size: 60px;
   }
 }
-
 @media screen and (min-width: 768px) {
-  .hero-container {
-    position: relative;
-    padding-left: 32px;
-    padding-right: 32px;
+  .hero {
+    padding-bottom: 124px;
+  }
+  .hero-bg {
     background-image: url(/img/hero/bg-tab.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-y: 6px;
-    background-position-x: -11px;
+    background-position-y: -40px;
+    background-position-x: -10px;
   }
 
   .hero-title {
-    /*-----------------додав------*/
     width: 704px;
-    /*-----------------додав------*/
+    max-width: 100%;
     font-family: 'Impact', sans-serif;
     font-weight: 400;
-    font-size: 136px;
-    line-height: 1.14706;
+    font-size: 124px;
+    line-height: 116%;
     letter-spacing: 0.01em;
     text-transform: uppercase;
     color: var(--black);
   }
-
-  .hero-title {
-    font-size: 124px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-  }
-
   .hero-images {
-    max-width: 336px;
-    margin: -120px 0 0 auto;
+    margin: -90px 0 0 auto;
+    margin-right: 50px;
   }
-
   .background-color {
     display: block;
-    position: absolute;
   }
-
   .hero-tx-con {
     padding: 64px 32px;
-    max-width: 768px;
   }
   .hero-text {
+    max-width: 704px;
+
     font-weight: 500;
     font-size: 36px;
-    line-height: 1.33333;
+    line-height: 1.33;
     letter-spacing: 0.01em;
     text-transform: uppercase;
     text-align: center;
   }
-
   .hero-bg {
-    position: absolute;
     top: 0;
     right: -5px;
     z-index: -1;
-    /* трохи змінив розміщення,
-        щоб було більш-менш сжоже
-        на макет */
   }
 }
-
 @media screen and (min-width: 1280px) {
+  .hero {
+    color: var(--white);
+    padding-bottom: 164px;
+    padding-top: 192px;
+  }
   .hero-content {
     display: flex;
     flex-wrap: wrap;
   }
-
-  .hero-container {
+  .hero-bg {
+    /* padding-top: 192px; */
     background-image: url(/img/hero/bg-desk.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-y: -53px;
-    background-position-x: 485px;
+    background-position-y: -190px;
+    background-position-x: 450px;
+  }
+  .hero-images {
+    margin: -170px 0 0;
   }
 
   .container {
     max-width: 1280px;
   }
-
   .hero-title-list-container {
-    padding-bottom: 40px;
-    padding-top: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 80px;
+    padding-bottom: 40px;
   }
-
   .hero-title {
     align-self: flex-end;
-    margin-bottom: 80;
     font-size: 136px;
     line-height: 1.14706;
-    max-width: 660px;
-    /*-----------------видалити------*/
-    /* padding: 64px 32px; */
-    /*-----------------видалити------*/
-    /*-----------------додав------*/
-    padding: 0;
-    /* margin-bottom: 80px; */
-    /*-----------------додав------*/
-  }
-
-  .social-list {
-    display: flex;
+    max-width: 100%;
   }
 
   .hero-images {
     max-width: 488px;
     width: 100%;
-    padding-top: 16px;
   }
-
   .social-list {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    height: 24px;
     gap: 40px;
   }
-
   .social-link {
+    line-height: 150%;
+    letter-spacing: 0.03em;
     color: var(--black);
     transition: color ease-in-out 0.2s;
   }
-
   .social-link:hover {
     color: var(--hover-green);
   }
-
   .hero-tx-con {
-    padding: 120px 136px;
-    max-width: 1280px;
     margin: 0 auto;
     background-color: var(--light-grey);
+  }
+
+  .hero-text {
+    max-width: 1008px;
   }
 }

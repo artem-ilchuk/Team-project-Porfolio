@@ -15,6 +15,8 @@
   --hover-grey: #bbbbbb;
   --faq-footer-line: #e4e5e6;
   --pop-up-message: #f0f0f0;
+  --mob-link: #292929;
+  --link-back: #e4e5e6;
 }
 
 .dark {
@@ -28,6 +30,8 @@
   --hover-grey: #3b3f45;
   --faq-footer-line: #f0f0f0;
   --pop-up-message: #2a2d32;
+  --mob-link: #f0f0f0;
+  --link-back: #2a2d32;
 }
 
 body {
@@ -36,6 +40,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-style: normal;
+  transition: all 1000ms ease;
 }
 
 html {

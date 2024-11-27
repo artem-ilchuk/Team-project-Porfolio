@@ -65,18 +65,16 @@
   gap: 16px;
 }
 
-.btn-arrow {
-  box-sizing: content-box;
-  border: 1px solid var(--black);
-  border-radius: 8px;
-  width: 24px;
-  height: 24px;
-  padding: 8px;
+:root {
+  --reviews-background-arrow: #f0f0f0;
+  --reviews-arrow: #292929;
+  --reviews-arrow-hover: #bbbbbb;
 }
 
-.btn-arrow-color {
-  stroke: var(--black);
-  fill: var(--white);
+.dark {
+  --reviews-background-arrow: #2a2d32;
+  --reviews-arrow: #f0f0f0;
+  --reviews-arrow-hover: #3b3f45;
 }
 
 .reviews-button-prev,
@@ -87,39 +85,56 @@
   border: 0;
   border-radius: 8px;
   overflow: hidden;
+  background-color: var(--reviews-background-arrow);
+}
+
+.btn-arrow {
+  box-sizing: content-box;
+  border: 1px solid var(--reviews-arrow);
+  border-radius: 8px;
+  width: 24px;
+  height: 24px;
+  padding: 8px;
+}
+
+.btn-arrow-color {
+  stroke: var(--reviews-arrow);
+  fill: var(--reviews-background-arrow);
 }
 
 .reviews-button-prev:hover,
 .reviews-button-next:hover,
 .reviews-button-prev:focus,
 .reviews-button-next:focus {
-  background-color: var(--hover-grey);
+  background-color: var(--reviews-arrow-hover); 
+  transition: none;
 }
 
 .reviews-button-prev:hover .btn-arrow-color,
 .reviews-button-next:hover .btn-arrow-color,
 .reviews-button-prev:focus .btn-arrow-color,
 .reviews-button-next:focus .btn-arrow-color {
-  stroke: var(--black);
-  fill: var(--hover-grey);
+  stroke: var(--reviews-arrow);
+  fill: var(--reviews-arrow-hover);
 }
+
 .swiper-button-disabled .btn-arrow {
-  border: 1px solid var(--light-grey);
+  border: 1px solid var(--reviews-arrow-hover);
 }
 
 .swiper-button-disabled .btn-arrow-color {
-  stroke: var(--light-grey);
-  fill: var(--light-grey);
+  stroke: var(--reviews-arrow-hover);
+  fill: var(--reviews-background-arrow);
 }
 
 .swiper-button-disabled:hover {
-  background-color: var(--white);
+  background-color: var(--reviews-background-arrow);
   cursor: auto;
 }
 
 .swiper-button-disabled:hover .btn-arrow-color {
-  stroke: var(--light-grey);
-  fill: var(--light-grey);
+  stroke: var(--reviews-arrow-hover);
+  fill: var(--reviews-background-arrow);
 }
 
 @media only screen and (min-width: 768px) {

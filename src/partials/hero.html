@@ -1,47 +1,42 @@
 <section class="hero">
-  <div class="container hero-container">
-    <div class="hero-content">
-      <div class="hero-title-list-container">
-        <h1 class="hero-title">
-          Hello, I am
-          <span class="text-green">Fullstack developer</span>
-        </h1>
-        <ul class="social-list">
-          <li class="social-item">
-            <a class="social-link" href="https://www.instagram.com/goitclub/"
-              >Insragram</a
-            >
-          </li>
-          <li class="social-item">
-            <a class="social-link" href="https://t.me/junior_developer_ua"
-              >Telegram</a
-            >
-          </li>
-          <li class="social-item">
-            <a
-              class="social-link"
-              href="https://www.linkedin.com/school/goit-start-your-career-in-it"
-              >Linkedin</a
-            >
-          </li>
-          <li class="social-item">
-            <a
-              class="social-link"
-              href="https://github.com/artem-ilchuk/Team-project-Porfolio"
-              >GitHub</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="hero-images">
-        <img
-          srcset="./img/hero/imgdesk.png"
-          src="./img/hero/imgdesk2x.png"
-          alt="Fullstack Developer"
-        />
-      </div>
-      <div class="hero-bg">
-        <!-- <img src="./img/hero/bg-mob.png" alt="Background Image" /> -->
+  <div class="hero-bg container">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-title-list-container">
+          <h1 class="hero-title">
+            Hello, I am
+            <span class="text-green">Fullstack developer</span>
+          </h1>
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-link" href="https://www.instagram.com/goitclub/" target="_blank"
+                rel="noopener noreferrer nofollow">Instagram</a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="https://t.me/junior_developer_ua" target="_blank"
+                rel="noopener noreferrer nofollow">Telegram</a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="https://www.linkedin.com/school/goit-start-your-career-in-it" target="_blank"
+                rel="noopener noreferrer nofollow">Linkedin</a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="https://github.com/artem-ilchuk/Team-project-Porfolio" target="_blank"
+                rel="noopener noreferrer nofollow">GitHub</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hero-images">
+          <picture class="hero-photo">
+            <source media="(min-width: 1280px)" srcset="
+                /img/hero/imgdesk.png    1x,
+                /img/hero/imgdesk2x.png 2x
+              " />
+            <source media="(min-width: 768px)" srcset="/img/hero/imgtab.png 1x, /img/hero/imgtab2x.png 2x" />
+            <source media="(max-width: 767px)" srcset="/img/hero/imgmob.png 1x, /img/hero/imgmob2x.png 2x" />
+            <img src="/img/hero/imgmob.png" alt="Fullstack Developer" width="276" height="416" class="hero-image" />
+          </picture>
+        </div>
       </div>
     </div>
   </div>
@@ -49,7 +44,7 @@
     <p class="hero-text">
       I work with people all over the world to create
       <span class="text-green">impressive</span> and
-      <span class="text-green">functional</span> websites that reflect each
+      <span class="text-green">functional websites</span> that reflect each
       client’s unique personality.
     </p>
   </div>

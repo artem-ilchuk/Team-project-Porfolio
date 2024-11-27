@@ -4,13 +4,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
 }
 .together-container {
   position: relative;
-  
 }
-
 .together-title {
   color: var(--accet-green);
   font-family: Impact;
@@ -22,11 +19,9 @@
   text-transform: uppercase;
   margin-bottom: 40px;
 }
-
 .together-title-span {
   color: var(--black);
 }
-
 .together-subtittle {
   color: var(--black);
   font-family: Poppins;
@@ -37,14 +32,12 @@
   text-transform: uppercase;
   margin-bottom: 32px;
 }
-
 .together-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
   margin-bottom: 40px;
 }
-
 .together-link {
   display: flex;
   gap: 16px;
@@ -65,24 +58,20 @@
   line-height: 1.5em;
   letter-spacing: 0.5px;
 }
-
 .together-icon {
   stroke: var(--accet-green);
   fill: transparent;
 }
-
 .form-label {
   display: none;
   opacity: 0;
   visibility: hidden;
 }
-
 .together-form {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
-
 .form-input-name {
   width: 100%;
   padding: 16px;
@@ -99,11 +88,9 @@
   letter-spacing: 0.5px;
   gap: 32px;
 }
-
 .input-container {
   position: relative;
 }
-
 .email-correct-icon {
   position: absolute;
   right: 17px;
@@ -114,7 +101,6 @@
 .d-none {
   display: none;
 }
-
 .input-textarea {
   width: 100%;
   padding: 16px;
@@ -131,7 +117,6 @@
   letter-spacing: 0.5px;
   resize: none;
 }
-
 .form-btn {
   border-radius: 8px;
   background-color: var(--accet-green);
@@ -164,23 +149,18 @@
   display: block;
   visibility: visible;
   opacity: 1;
-
 }
-
 .d-none {
   opacity: 0;
   visibility: hidden;
 }
-
 .iziToast {
   position: fixed !important;
   right: 1rem !important;
-  top: 1rem !important; 
-  z-index: 9999;  
+  top: 1rem !important;
+  z-index: 9999;
 }
-
 /* ---TABLET--- */
-
 @media screen and (min-width: 768px) {
   .work-together {
     padding-top: 124px;
@@ -191,9 +171,6 @@
     background-position-x: 92%;
     background-position-y: 6px;
   }
-
-
-
   .together-title {
     font-family: Impact;
     font-size: 108px;
@@ -204,7 +181,6 @@
     text-transform: uppercase;
     margin-bottom: 60px;
   }
-
   .together-subtittle {
     font-size: 20px;
     font-style: normal;
@@ -213,13 +189,11 @@
     letter-spacing: 0.5px;
     width: 488px;
   }
-
   .together-list {
     flex-direction: row;
     margin-bottom: 60px;
     justify-content: flex-start;
   }
-
   .together-item {
     color: var(--black);
     font-family: Poppins;
@@ -228,53 +202,45 @@
     line-height: 1.5em;
     letter-spacing: 0.5px;
   }
-
   .form-btn {
     padding: 12px 24px;
     width: 173px;
   }
 }
-
 /* ---DESKTOP--- */
 @media screen and (min-width: 1280px) {
-  
   .work-together {
     padding-top: 164px;
-  padding-bottom: 164px;
-        max-width: 100%;
-        position: relative;
-        background-repeat: no-repeat;
-        background-size: 526px 408px;
-        background-image: url(/img/work-together/bg-desk.png);
-       background-position-x: 95%;
-       background-position-y: 40px;
-    }
-
+    padding-bottom: 164px;
+    max-width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 526px 408px;
+    background-image: url(/img/work-together/bg-desk.png);
+    background-position-x: 95%;
+    background-position-y: 40px;
+  }
   .together-subtittle {
     margin-bottom: 120px;
   }
-
   .together-list {
     flex-direction: column;
     margin-bottom: 0;
   }
-
   .together-position {
     display: flex;
-justify-content: space-between;
+    justify-content: space-between;
   }
   .form-input-name {
     width: 592px;
   }
 }
-
 .form-input-name-error {
   color: var(--error);
 }
-
 @media screen and (min-width: 1920px) {
-    .work-together {
-        background-position-x: 65%;
-        background-size: auto;
-    }
+  .work-together {
+    background-position-x: 65%;
+    background-size: auto;
+  }
 }
