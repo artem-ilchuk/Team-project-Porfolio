@@ -4,6 +4,7 @@
 
 .skills-animation {
   height: 244px;
+  overflow: hidden;
 }
 
 .marquee-1,

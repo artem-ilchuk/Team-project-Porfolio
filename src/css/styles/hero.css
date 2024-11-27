@@ -1,13 +1,10 @@
 .hero {
   color: var(--white);
   padding-bottom: 80px;
-  padding-top: 192px;
+  padding-top: 80px;
 }
 .hero-bg {
   margin: 0 auto;
-  padding-top: 64px;
-  /* position: relative; */
-
   background-image: url(/img/hero/bg-mob.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -75,6 +72,9 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 124px;
+  }
   .hero-bg {
     background-image: url(/img/hero/bg-tab.png);
     background-repeat: no-repeat;
@@ -89,7 +89,7 @@
     font-family: 'Impact', sans-serif;
     font-weight: 400;
     font-size: 124px;
-    line-height: 1.14706;
+    line-height: 116%;
     letter-spacing: 0.01em;
     text-transform: uppercase;
     color: var(--black);
@@ -121,6 +121,11 @@
   }
 }
 @media screen and (min-width: 1280px) {
+  .hero {
+    color: var(--white);
+    padding-bottom: 164px;
+    padding-top: 192px;
+  }
   .hero-content {
     display: flex;
     flex-wrap: wrap;
@@ -143,18 +148,16 @@
   .hero-title-list-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 80px;
+    padding-bottom: 40px;
   }
   .hero-title {
     align-self: flex-end;
     font-size: 136px;
-    line-height: 116%;
+    line-height: 1.14706;
     max-width: 100%;
   }
-  .social-list {
-    display: flex;
-    padding-bottom: 42px;
-  }
+
   .hero-images {
     max-width: 488px;
     width: 100%;
@@ -163,9 +166,12 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    height: 24px;
     gap: 40px;
   }
   .social-link {
+    line-height: 150%;
+    letter-spacing: 0.03em;
     color: var(--black);
     transition: color ease-in-out 0.2s;
   }
