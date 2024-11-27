@@ -3,7 +3,6 @@
 }
 
 .skills-animation {
-  height: 244px;
   overflow: hidden;
 }
 
@@ -11,7 +10,6 @@
 .marquee-2 {
   overflow: hidden;
   position: relative;
-  height: 104px;
   background-color: var(--light-accet);
   display: flex;
   align-items: center;
@@ -29,8 +27,11 @@
 .marquee__inner-2 {
   display: flex;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
   animation: marquee 10s linear infinite;
 }
+
 @keyframes marquee {
   from {
     transform: translateX(0);
@@ -40,53 +41,43 @@
   }
 }
 
-.marquee__line-1,
-.marquee__line-2 {
+.marquee__inner-2 {
+  animation-delay: 150ms;
+  animation-direction: reverse;
+}
+
+.marquee-line {
   display: flex;
   align-items: center;
   gap: 16px;
   white-space: nowrap;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 0;
+  overflow: hidden;
 }
 
-.dot-animation-1,
-.dot-animation-2 {
+.marquee-line .dot {
+  display: block;
   width: 8px;
   height: 8px;
   background-color: var(--accet-green);
   border-radius: 2px;
-  transform: rotate(-180deg);
+  margin: 0 8px;
+  transform: rotate(90deg);
   flex-shrink: 0;
 }
 
-.dot-animation-2 {
+.marquee-2 .marquee-line .dot {
   background-color: var(--black);
 }
 
-.text-animation-1,
-.text-animation-2 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: var(--black);
-  margin: 0;
-  flex-shrink: 0;
-}
-
-.text-animation-2 {
+.marquee-2 .marquee-line {
   color: var(--accet-green);
-}
-
-.marquee__inner-1,
-.marquee__inner-2 {
-  animation-duration: 10s;
-}
-
-.marquee__inner-2 {
-  animation-delay: 150ms;
-  animation-direction: reverse;
 }
 
 @media screen and (min-width: 768px) {
@@ -94,17 +85,12 @@
     padding-bottom: 124px;
   }
 
-  .skills-animation {
-    height: 280px;
-  }
-
   .marquee-1,
   .marquee-2 {
     height: 128px;
   }
 
-  .text-animation-1,
-  .text-animation-2 {
+  .marquee-line {
     font-size: 36px;
     line-height: 1.33;
     letter-spacing: 0.01em;
@@ -114,8 +100,5 @@
 @media screen and (min-width: 1280px) {
   .tech-skils-container {
     padding-bottom: 164px;
-  }
-  .skills-animation {
-    height: 280px;
   }
 }

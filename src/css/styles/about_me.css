@@ -23,8 +23,11 @@
   margin-top: 32px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
 }
+.add {
+  margin-top: 24px;
+}
+
 .about-me-image {
   border-radius: 18px;
   margin-bottom: 40px;
@@ -32,7 +35,7 @@
 .education-list-element::before,
 .role-list-element::before {
   content: '';
-  display: inline-block;
+  display: block;
   border-radius: 1px;
   background: var(--accet-green);
   transform: rotate(-180deg);
@@ -61,9 +64,16 @@
 .role-list {
   display: flex;
   flex-direction: column;
+  margin-top: 32px;
+  gap: 12px;
 }
+
 .education-list-description,
 .role-list-description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
   color: var(--black);
   margin-left: 32px;
 }
@@ -118,6 +128,11 @@
   .role-container {
     align-items: center;
   }
+
+  .education-list,
+  .role-list {
+    gap: 16px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .about-me-wrapper {
@@ -143,8 +158,11 @@
     margin-bottom: 80px;
   }
   .container-education-role {
-    padding-left: 210px;
+    padding-left: 208px;
     gap: 136px;
+  }
+  .education-container {
+    width: 384px;
   }
   .biography-description {
     max-width: 488px;

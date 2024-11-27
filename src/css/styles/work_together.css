@@ -163,12 +163,14 @@
 /* ---TABLET--- */
 @media screen and (min-width: 768px) {
   .work-together {
+    max-width: 768px;
+    margin: 0 auto;
     padding-top: 124px;
     padding-bottom: 124px;
     background-repeat: no-repeat;
     background-size: 336px 260px;
     background-image: url(/img/work-together/bg-tab.png);
-    background-position-x: 92%;
+    background-position-x: 93%;
     background-position-y: 6px;
   }
   .together-title {
@@ -210,15 +212,14 @@
 /* ---DESKTOP--- */
 @media screen and (min-width: 1280px) {
   .work-together {
+    max-width: 1280px;
     padding-top: 164px;
     padding-bottom: 164px;
-    max-width: 100%;
-    position: relative;
     background-repeat: no-repeat;
     background-size: 526px 408px;
     background-image: url(/img/work-together/bg-desk.png);
     background-position-x: 95%;
-    background-position-y: 40px;
+    background-position-y: 30px;
   }
   .together-subtittle {
     margin-bottom: 120px;
@@ -237,10 +238,4 @@
 }
 .form-input-name-error {
   color: var(--error);
-}
-@media screen and (min-width: 1920px) {
-  .work-together {
-    background-position-x: 65%;
-    background-size: auto;
-  }
 }
