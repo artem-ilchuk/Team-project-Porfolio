@@ -107,6 +107,7 @@
 .reviews-button-prev:focus,
 .reviews-button-next:focus {
   background-color: var(--reviews-arrow-hover); 
+  transition: none;
 }
 
 .reviews-button-prev:hover .btn-arrow-color,
