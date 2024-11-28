@@ -221,6 +221,11 @@
     background-position-x: 95%;
     background-position-y: 30px;
   }
+
+  .together-title {
+    margin-bottom: 80px;
+  }
+
   .together-subtittle {
     margin-bottom: 120px;
   }

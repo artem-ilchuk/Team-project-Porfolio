@@ -20,6 +20,8 @@
   line-height: 150%;
   letter-spacing: 0.03em;
   color: var(--black);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 2px #14c57c, 0 2px 4px #009156;
 }
 
 .card-link:hover,
@@ -166,15 +168,15 @@
     font-size: 20px;
     line-height: 160%;
   }
-    .nav_my_project {
-      gap: 60px;
-    }
+  .nav_my_project {
+    gap: 60px;
+  }
   .title_box {
     display: flex;
     justify-content: space-between;
   }
 
-  .card_text_my_project{
+  .card_text_my_project {
     margin-bottom: 20px;
   }
 
@@ -188,7 +190,7 @@
     width: 1008px;
     height: 580px;
   }
-  .title_my_project{
+  .title_my_project {
     margin-bottom: 80px;
   }
   .nav_my_project {
@@ -198,7 +200,7 @@
     margin: 0;
   }
 
-    :root {
-      --margin-bottom: 80px;
-    }
+  :root {
+    --margin-bottom: 80px;
+  }
 }

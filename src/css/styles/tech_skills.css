@@ -3,6 +3,7 @@
 }
 
 .skills-animation {
+  height: 244px;
   overflow: hidden;
 }
 
@@ -13,12 +14,11 @@
   background-color: var(--light-accet);
   display: flex;
   align-items: center;
-  width: 100%;
   z-index: 1;
 }
 
 .marquee-2 {
-  transform: rotate(+2deg);
+  transform: rotate(2deg);
   background-color: var(--light-grey);
   z-index: 0;
 }
@@ -27,9 +27,7 @@
 .marquee__inner-2 {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  animation: marquee 10s linear infinite;
+  animation: marquee 30s linear infinite;
 }
 
 @keyframes marquee {
@@ -57,8 +55,7 @@
   line-height: 125%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  margin: 0;
-  overflow: hidden;
+  height: 104px;
 }
 
 .marquee-line .dot {
@@ -68,7 +65,6 @@
   background-color: var(--accet-green);
   border-radius: 2px;
   margin: 0 8px;
-  transform: rotate(90deg);
   flex-shrink: 0;
 }
 
@@ -81,6 +77,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .skills-animation {
+    height: 280px;
+  }
   .tech-skils-container {
     padding-bottom: 124px;
   }
